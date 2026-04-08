@@ -1,3 +1,5 @@
+#include <stddef.h>
+
 typedef struct {
   size_t size;
   size_t count;
