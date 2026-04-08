@@ -12,9 +12,3 @@ blog/
 └── static/
     └── css/style.css
 ```
-
-- For each markdown file in `content`
-- Generate html with `pandoc`
-- Load `templates/base.html`
-- For each `content` html, replace sections
-- Generate output html file equivalent
