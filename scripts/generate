@@ -2,6 +2,8 @@
 
 gcc src/main.c -o site
 
-chmod +x site
+if [ $? -eq 0 ]; then
+  chmod +x site
 
-./site content
+  ./site content
+fi
