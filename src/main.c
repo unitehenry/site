@@ -2,6 +2,7 @@
 #include <dirent.h>
 #include <stdlib.h>
 #include <string.h>
+#include "string_list.h"
 
 /*
  * - For each markdown file in `content` (command line arg)
@@ -11,49 +12,32 @@
  * - Generate output html file equivalent
  */
 char** get_content_files(char* content_path) {
-  printf("content path: %s\n", content_path);
+  StringList* list = init_string_list(sizeof(size_t));
 
   struct dirent *de;
 
-  DIR *dr = opendir("content");
-
-  int file_count = 0;
+  DIR *dr = opendir(content_path);
 
   while((de = readdir(dr)) != NULL) {
     if (strcmp(de->d_name, ".") == 0) {
       continue;
     }
+
     if (strcmp(de->d_name, "..") == 0) {
       continue;
     }
-    printf("filename %s; filetype: %i\n", de->d_name, de->d_type);
-    file_count++;
-  }
 
-  printf("file count: %i\n", file_count);
+    // TODO: recurse directories
+    if (de->d_type == DT_DIR) {
+      printf("filename %s; filetype: %i (DT_DIR)\n", de->d_name, de->d_type);
+    }
+
+    string_list_append(list, de->d_name);
+  }
 
   closedir(dr);
 
-  char** files = malloc(file_count + 1);
-
-  dr = opendir("content");
-
-  int file_idx = 0;
-
-  while((de = readdir(dr)) != NULL) {
-    if (strcmp(de->d_name, ".") == 0) {
-      continue;
-    }
-    if (strcmp(de->d_name, "..") == 0) {
-      continue;
-    }
-    files[file_idx] = de->d_name;
-    file_idx++;
-  }
-
-  files[file_count] = NULL;
-
-  return files;
+  return list->strings;
 }
 
 int main(int argc, char **args) {
@@ -64,14 +48,6 @@ int main(int argc, char **args) {
   }
 
   char** files = get_content_files(args[1]);
-
-  int i = 0;
-
-  while(files[i] != NULL) {
-    printf("filename: %s\n", files[i]);
-
-    i++;
-  }
 
   return 0;
 }

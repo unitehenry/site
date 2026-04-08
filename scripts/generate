@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-gcc src/main.c -o site
+gcc src/*.c -o site
 
 if [ $? -eq 0 ]; then
   chmod +x site
