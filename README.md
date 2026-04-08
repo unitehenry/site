@@ -1,0 +1,20 @@
+## Static Site Generator
+
+```
+blog/
+├── content/
+│   ├── index.md
+│   ├── blog/
+│   │   └── first-post.md
+│   └── about.md
+├── templates/
+│   └── base.html
+└── static/
+    └── css/style.css
+```
+
+- For each markdown file in `content`
+- Generate html with `pandoc`
+- Load `templates/base.html`
+- For each `content` html, replace sections
+- Generate output html file equivalent
