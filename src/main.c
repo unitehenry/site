@@ -11,12 +11,14 @@
  * - For each `content` html, replace sections
  * - Generate output html file equivalent
  */
-char** get_content_files(char* content_path) {
-  StringList* list = init_string_list(sizeof(size_t));
-
+void get_content_files(StringList* list, char* content_path) {
   struct dirent *de;
 
   DIR *dr = opendir(content_path);
+
+  if (dr == NULL) {
+    return;
+  }
 
   while((de = readdir(dr)) != NULL) {
     if (strcmp(de->d_name, ".") == 0) {
@@ -27,21 +29,18 @@ char** get_content_files(char* content_path) {
       continue;
     }
 
-    // TODO: recurse directories
-    if (de->d_type == DT_DIR) {
-      printf("filename %s; filetype: %i (DT_DIR)\n", de->d_name, de->d_type);
-    }
-
     char filepath[256];
 
     snprintf(filepath, sizeof(filepath), "%s/%s", content_path, de->d_name);
 
-    string_list_append(list, filepath);
+    if (de->d_type == DT_DIR) {
+      get_content_files(list, filepath);
+    } else {
+      string_list_append(list, filepath);
+    }
   }
 
   closedir(dr);
-
-  return list->strings;
 }
 
 int main(int argc, char **args) {
@@ -51,12 +50,14 @@ int main(int argc, char **args) {
     return 1;
   }
 
-  char** files = get_content_files(args[1]);
+  StringList* list = init_string_list(10); // start with capacity 10
+
+  get_content_files(list, args[1]);
 
   int i = 0;
 
-  while(files[i] != NULL) {
-    printf("filepath: %s\n", files[i]);
+  while(list->strings[i] != NULL) {
+    printf("filepath: %s\n", list->strings[i]);
     i++;
   }
 

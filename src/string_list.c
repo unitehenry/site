@@ -21,11 +21,12 @@ StringList* init_string_list(size_t size) {
 
 void string_list_append(StringList* string_list, char* string) {
   if (string_list->count + 1 > string_list->size) {
-    string_list->strings = realloc(string_list->strings, string_list->size * 2);
+    string_list->strings = realloc(string_list->strings, (string_list->size * 2) * sizeof(char*));
     string_list->size = string_list->size * 2;
   }
 
-  char* str = malloc(sizeof(char*));
+  size_t len = strlen(string) + 1;
+  char* str = malloc(len);
 
   strcpy(str, string);
 
