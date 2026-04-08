@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+gcc src/main.c -o site
+
+chmod +x site
+
+./site content
