@@ -1,8 +1,8 @@
-#include <stdio.h>
+#include "string_list.h"
 #include <dirent.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "string_list.h"
 
 /*
  * - For each markdown file in `content` (command line arg)
@@ -11,7 +11,7 @@
  * - For each `content` html, replace sections
  * - Generate output html file equivalent
  */
-void get_content_files(StringList* list, char* content_path) {
+void get_content_files(StringList *list, char *content_path) {
   struct dirent *de;
 
   DIR *dr = opendir(content_path);
@@ -20,7 +20,7 @@ void get_content_files(StringList* list, char* content_path) {
     return;
   }
 
-  while((de = readdir(dr)) != NULL) {
+  while ((de = readdir(dr)) != NULL) {
     if (strcmp(de->d_name, ".") == 0) {
       continue;
     }
@@ -50,13 +50,13 @@ int main(int argc, char **args) {
     return 1;
   }
 
-  StringList* list = init_string_list(10); // start with capacity 10
+  StringList *list = init_string_list(10); // start with capacity 10
 
   get_content_files(list, args[1]);
 
   int i = 0;
 
-  while(list->strings[i] != NULL) {
+  while (list->strings[i] != NULL) {
     printf("filepath: %s\n", list->strings[i]);
     i++;
   }
