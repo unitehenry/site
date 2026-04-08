@@ -32,7 +32,11 @@ char** get_content_files(char* content_path) {
       printf("filename %s; filetype: %i (DT_DIR)\n", de->d_name, de->d_type);
     }
 
-    string_list_append(list, de->d_name);
+    char filepath[256];
+
+    snprintf(filepath, sizeof(filepath), "%s/%s", content_path, de->d_name);
+
+    string_list_append(list, filepath);
   }
 
   closedir(dr);
@@ -48,6 +52,13 @@ int main(int argc, char **args) {
   }
 
   char** files = get_content_files(args[1]);
+
+  int i = 0;
+
+  while(files[i] != NULL) {
+    printf("filepath: %s\n", files[i]);
+    i++;
+  }
 
   return 0;
 }

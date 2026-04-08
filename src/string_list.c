@@ -1,15 +1,20 @@
 #include <stddef.h>
 #include <stdlib.h>
+#include <string.h>
 #include "string_list.h"
 
 StringList* init_string_list(size_t size) {
   StringList* string_list = malloc(sizeof(StringList));
 
-  string_list->strings = malloc(size * sizeof(char*));
+  string_list->strings = malloc((size * sizeof(char*)));
 
   string_list->count = 0;
 
   string_list->size = size;
+
+  if (size > 0) {
+    string_list->strings[0] = NULL;
+  }
 
   return string_list;
 }
@@ -20,6 +25,11 @@ void string_list_append(StringList* string_list, char* string) {
     string_list->size = string_list->size * 2;
   }
 
-  string_list->strings[string_list->count] = string;
+  char* str = malloc(sizeof(char*));
+
+  strcpy(str, string);
+
+  string_list->strings[string_list->count] = str;
   string_list->count++;
+  string_list->strings[string_list->count] = NULL;
 }
