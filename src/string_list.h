@@ -1,3 +1,6 @@
+#ifndef STRING_LIST_H
+#define STRING_LIST_H
+
 #include <stddef.h>
 
 typedef struct {
@@ -8,3 +11,5 @@ typedef struct {
 
 StringList *init_string_list(size_t size);
 void string_list_append(StringList *string_list, char *string);
+
+#endif

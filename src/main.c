@@ -2,123 +2,14 @@
 #include "path_root.h"
 #include "string_list.h"
 #include "string_replace.h"
-#include <dirent.h>
+#include "get_content_files.h"
+#include "run_pandoc.h"
+#include "to_write_path.h"
+#include "generate_pages.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 char *BUILD_DIRECTORY = "build";
-
-/*
- * - For each markdown file in `content` (command line arg)
- * - Generate html with `pandoc`
- * - Load `templates/base.html` (from command line arg)
- * - For each `content` html, replace sections
- * - Generate output html file equivalent
- */
-void get_content_files(StringList *list, char *content_path) {
-  struct dirent *de;
-
-  DIR *dr = opendir(content_path);
-
-  if (dr == NULL) {
-    return;
-  }
-
-  while ((de = readdir(dr)) != NULL) {
-    if (strcmp(de->d_name, ".") == 0) {
-      continue;
-    }
-
-    if (strcmp(de->d_name, "..") == 0) {
-      continue;
-    }
-
-    size_t filepath_len = strlen(content_path) + strlen(de->d_name) + 2;
-
-    char filepath[filepath_len];
-
-    snprintf(filepath, sizeof(filepath), "%s/%s", content_path, de->d_name);
-
-    if (de->d_type == DT_DIR) {
-      get_content_files(list, filepath);
-    } else {
-      string_list_append(list, filepath);
-    }
-  }
-
-  closedir(dr);
-}
-
-void run_pandoc(FILE **fp, char *content_path) {
-  char *PANDOC_CMD = "pandoc ";
-
-  size_t command_len = strlen(content_path) + strlen(PANDOC_CMD) + 2;
-
-  char command[command_len];
-
-  snprintf(command, sizeof(command), "%s %s", PANDOC_CMD, content_path);
-
-  *fp = popen(command, "r");
-}
-
-void to_write_path(char **write_path, char *read_path) {
-  char replace_path[strlen(read_path)];
-
-  strcpy(replace_path, read_path);
-
-  *write_path = str_replace(replace_path, ".md", ".html");
-
-  char *root;
-
-  path_root(&root, *write_path);
-
-  char from_dir[strlen(root) + 2];
-
-  snprintf(from_dir, strlen(root) + 2, "%s/", root);
-
-  char to_dir[strlen(BUILD_DIRECTORY) + 2];
-
-  snprintf(to_dir, strlen(BUILD_DIRECTORY) + 2, "%s/", BUILD_DIRECTORY);
-
-  *write_path = str_replace(*write_path, from_dir, to_dir);
-}
-
-void generate_pages(StringList *list) {
-  int i = 0;
-
-  while (list->strings[i] != NULL) {
-    char *write_path;
-
-    to_write_path(&write_path, list->strings[i]);
-
-    printf("filepath: %s\n", write_path);
-
-    create_subdirectories(write_path);
-
-    FILE *write_fp = fopen(write_path, "w");
-
-    FILE *read_fp;
-
-    run_pandoc(&read_fp, list->strings[i]);
-
-    char *line = NULL;
-
-    size_t len = 0;
-
-    ssize_t read;
-
-    while ((read = getline(&line, &len, read_fp)) != -1) {
-      fputs(line, write_fp);
-    }
-
-    fclose(write_fp);
-
-    fclose(read_fp);
-
-    i++;
-  }
-}
 
 int main(int argc, char **argv) {
   if (argc < 2) {
