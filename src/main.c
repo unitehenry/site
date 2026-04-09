@@ -45,6 +45,26 @@ void get_content_files(StringList *list, char *content_path) {
   closedir(dr);
 }
 
+void generate_pages(StringList *list) {
+  int i = 0;
+
+  while (list->strings[i] != NULL) {
+    size_t command_len = strlen(list->strings[i]) + strlen("pandoc ") + 2;
+
+    char command[command_len];
+
+    snprintf(command, sizeof(command), "pandoc %s", list->strings[i]);
+
+    printf("%s\n", command);
+
+    FILE *fp = popen(command, "w");
+
+    fclose(fp);
+
+    i++;
+  }
+}
+
 int main(int argc, char **args) {
   if (argc < 2) {
     fprintf(stderr, "Must provide content directory\n");
@@ -56,12 +76,7 @@ int main(int argc, char **args) {
 
   get_content_files(list, args[1]);
 
-  int i = 0;
-
-  while (list->strings[i] != NULL) {
-    printf("filepath: %s\n", list->strings[i]);
-    i++;
-  }
+  generate_pages(list);
 
   return 0;
 }
