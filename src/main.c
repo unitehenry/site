@@ -29,7 +29,9 @@ void get_content_files(StringList *list, char *content_path) {
       continue;
     }
 
-    char filepath[256];
+    size_t filepath_len = strlen(content_path) + strlen(de->d_name) + 2;
+
+    char filepath[filepath_len];
 
     snprintf(filepath, sizeof(filepath), "%s/%s", content_path, de->d_name);
 
