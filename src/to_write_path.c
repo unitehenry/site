@@ -1,7 +1,7 @@
+#include "path_root.h"
+#include "string_replace.h"
 #include <stdio.h>
 #include <string.h>
-#include "string_replace.h"
-#include "path_root.h"
 
 extern char *BUILD_DIRECTORY;
 

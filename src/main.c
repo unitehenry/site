@@ -1,5 +1,5 @@
-#include "get_content_files.h"
 #include "generate_pages.h"
+#include "get_content_files.h"
 #include <stdio.h>
 #include <stdlib.h>
 

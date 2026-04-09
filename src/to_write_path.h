@@ -1,8 +1,8 @@
 #ifndef TO_WRITE_PATH_H
 #define TO_WRITE_PATH_H
 
-#include "string_replace.h"
 #include "path_root.h"
+#include "string_replace.h"
 
 extern char *BUILD_DIRECTORY;
 

@@ -1,8 +1,8 @@
-#include <stdio.h>
-#include "string_list.h"
-#include "to_write_path.h"
 #include "create_subdirectories.h"
 #include "run_pandoc.h"
+#include "string_list.h"
+#include "to_write_path.h"
+#include <stdio.h>
 
 void generate_pages(StringList *list) {
   int i = 0;

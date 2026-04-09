@@ -1,7 +1,7 @@
+#include "string_list.h"
 #include <dirent.h>
 #include <stdio.h>
 #include <string.h>
-#include "string_list.h"
 
 void get_content_files(StringList *list, char *content_path) {
   struct dirent *de;
