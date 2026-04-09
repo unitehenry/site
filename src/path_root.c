@@ -2,7 +2,6 @@
 #include <libgen.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stdio.h>
 
 void path_root(char **root, char *path) {
   char *path_copy = strdup(path);
