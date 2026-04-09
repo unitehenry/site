@@ -47,7 +47,7 @@ void get_content_files(StringList *list, char *content_path) {
   closedir(dr);
 }
 
-void run_pandoc(FILE *fp, char *content_path) {
+void run_pandoc(FILE **fp, char *content_path) {
   char *PANDOC_CMD = "pandoc ";
 
   size_t command_len = strlen(content_path) + strlen(PANDOC_CMD) + 2;
@@ -56,7 +56,7 @@ void run_pandoc(FILE *fp, char *content_path) {
 
   snprintf(command, sizeof(command), "%s %s", PANDOC_CMD, content_path);
 
-  fp = popen(command, "w");
+  *fp = popen(command, "r");
 }
 
 void to_write_path(char *write_path, char* read_path) {
@@ -66,14 +66,14 @@ void to_write_path(char *write_path, char* read_path) {
 
     strcpy(write_path, str_replace(replace_path, ".md", ".html"));
 
-    strcpy(write_path, str_replace(write_path, "content/", "static/"));
+    strcpy(write_path, str_replace(write_path, "content/", "build/"));
 }
 
 void generate_pages(StringList *list) {
   int i = 0;
 
   while (list->strings[i] != NULL) {
-    char write_path[40];
+    char write_path[1024];
 
     to_write_path(write_path, list->strings[i]);
 
@@ -81,15 +81,11 @@ void generate_pages(StringList *list) {
 
     create_subdirectories(write_path);
 
-    // open file to write
+    FILE *write_fp = fopen(write_path, "w");
 
-    i++;
+    FILE *read_fp;
 
-    continue;
-
-    FILE *fp;
-
-    run_pandoc(fp, list->strings[i]);
+    run_pandoc(&read_fp, list->strings[i]);
 
     char *line = NULL;
 
@@ -97,11 +93,13 @@ void generate_pages(StringList *list) {
 
     ssize_t read;
 
-    while ((read = getline(&line, &len, fp)) != -1) {
-      // printf("%s", line);
+    while ((read = getline(&line, &len, read_fp)) != -1) {
+      fputs(line, write_fp);
     }
 
-    fclose(fp);
+    fclose(write_fp);
+
+    fclose(read_fp);
 
     i++;
   }
