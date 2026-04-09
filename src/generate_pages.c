@@ -2,7 +2,11 @@
 #include "run_pandoc.h"
 #include "string_list.h"
 #include "to_write_path.h"
+#include "trim_whitespace.h"
 #include <stdio.h>
+#include <string.h>
+
+extern char *BASE_TEMPLATE;
 
 void generate_pages(StringList *list) {
   int i = 0;
@@ -22,14 +26,29 @@ void generate_pages(StringList *list) {
 
     run_pandoc(&read_fp, list->strings[i]);
 
-    char *line = NULL;
+    char *template_line = NULL;
 
-    size_t len = 0;
+    size_t template_len = 0;
 
-    ssize_t read;
+    ssize_t template_read;
 
-    while ((read = getline(&line, &len, read_fp)) != -1) {
-      fputs(line, write_fp);
+    // begin writing template
+    FILE *template_fp = fopen(BASE_TEMPLATE, "r");
+
+    while ((template_read = getline(&template_line, &template_len, template_fp)) != -1) {
+      if (strcmp(trim_whitespace(template_line), "{{ content }}") == 0) {
+        char *content_line = NULL;
+
+        size_t content_len = 0;
+
+        ssize_t content_read;
+
+        while ((content_read = getline(&content_line, &content_len, read_fp)) != -1) {
+          fputs(content_line, write_fp);
+        }
+      } else {
+        fputs(template_line, write_fp);
+      }
     }
 
     fclose(write_fp);

@@ -4,6 +4,7 @@
 #include <stdlib.h>
 
 char *BUILD_DIRECTORY = "build";
+char *BASE_TEMPLATE = "templates/base.html";
 
 int main(int argc, char **argv) {
   if (argc < 2) {
