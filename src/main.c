@@ -7,6 +7,8 @@
 #include <stdlib.h>
 #include <string.h>
 
+char *BUILD_DIRECTORY = "build";
+
 /*
  * - For each markdown file in `content` (command line arg)
  * - Generate html with `pandoc`
@@ -71,11 +73,15 @@ void to_write_path(char **write_path, char *read_path) {
 
   path_root(&root, *write_path);
 
-  char root_t[strlen(root) + strlen("/")];
+  char from_dir[strlen(root) + 2];
 
-  snprintf(root_t, strlen(root) + 2, "%s/", root);
+  snprintf(from_dir, strlen(root) + 2, "%s/", root);
 
-  *write_path = str_replace(*write_path, root_t, "build/");
+  char to_dir[strlen(BUILD_DIRECTORY) + 2];
+
+  snprintf(to_dir, strlen(BUILD_DIRECTORY) + 2, "%s/", BUILD_DIRECTORY);
+
+  *write_path = str_replace(*write_path, from_dir, to_dir);
 }
 
 void generate_pages(StringList *list) {
