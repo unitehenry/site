@@ -5,6 +5,7 @@
 
 char *BUILD_DIRECTORY = "build";
 char *BASE_TEMPLATE = "templates/base.html";
+char *CONTENT_TAG = "{{ content }}";
 
 int main(int argc, char **argv) {
   if (argc < 2) {

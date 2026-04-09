@@ -6,7 +6,7 @@
 #include <stdio.h>
 #include <string.h>
 
-char *CONTENT_TAG = "{{ content }}";
+extern char *CONTENT_TAG;
 extern char *BASE_TEMPLATE;
 
 void generate_pages(StringList *list) {
