@@ -45,16 +45,16 @@ void get_content_files(StringList *list, char *content_path) {
   closedir(dr);
 }
 
-FILE* run_pandoc(char* content_path) {
-    char *PANDOC_CMD = "pandoc ";
+FILE *run_pandoc(char *content_path) {
+  char *PANDOC_CMD = "pandoc ";
 
-    size_t command_len = strlen(content_path) + strlen(PANDOC_CMD) + 2;
+  size_t command_len = strlen(content_path) + strlen(PANDOC_CMD) + 2;
 
-    char command[command_len];
+  char command[command_len];
 
-    snprintf(command, sizeof(command), "%s %s", PANDOC_CMD, content_path);
+  snprintf(command, sizeof(command), "%s %s", PANDOC_CMD, content_path);
 
-    return popen(command, "w");
+  return popen(command, "w");
 }
 
 void generate_pages(StringList *list) {
