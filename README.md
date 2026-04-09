@@ -12,3 +12,7 @@ blog/
 └── static/
     └── css/style.css
 ```
+
+**TODO**
+
+- Specify `build` path

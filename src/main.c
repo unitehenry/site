@@ -1,4 +1,5 @@
 #include "create_subdirectories.h"
+#include "path_root.h"
 #include "string_list.h"
 #include "string_replace.h"
 #include <dirent.h>
@@ -66,7 +67,15 @@ void to_write_path(char **write_path, char *read_path) {
 
   *write_path = str_replace(replace_path, ".md", ".html");
 
-  *write_path = str_replace(*write_path, "content/", "build/");
+  char *root;
+
+  path_root(&root, *write_path);
+
+  char root_t[strlen(root) + strlen("/")];
+
+  snprintf(root_t, strlen(root) + 2, "%s/", root);
+
+  *write_path = str_replace(*write_path, root_t, "build/");
 }
 
 void generate_pages(StringList *list) {
