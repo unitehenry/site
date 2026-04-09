@@ -58,19 +58,23 @@ void run_pandoc(FILE *fp, char *content_path) {
   fp = popen(command, "w");
 }
 
+void to_write_path(char *write_path, char* read_path) {
+    char replace_path[strlen(read_path)];
+
+    strcpy(replace_path, read_path);
+
+    strcpy(write_path, str_replace(replace_path, ".md", ".html"));
+
+    strcpy(write_path, str_replace(write_path, "content/", "static/"));
+}
+
 void generate_pages(StringList *list) {
   int i = 0;
 
   while (list->strings[i] != NULL) {
-    char replace_path[strlen(list->strings[i])];
+    char write_path[40];
 
-    strcpy(replace_path, list->strings[i]);
-
-    char *write_path;
-
-    write_path = str_replace(replace_path, ".md", ".html");
-
-    write_path = str_replace(write_path, "content/", "static/");
+    to_write_path(write_path, list->strings[i]);
 
     printf("filepath: %s\n", write_path);
 
