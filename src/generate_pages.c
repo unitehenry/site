@@ -33,7 +33,6 @@ void generate_pages(StringList *list) {
 
     ssize_t template_read;
 
-    // begin writing template
     FILE *template_fp = fopen(BASE_TEMPLATE, "r");
 
     while ((template_read =
