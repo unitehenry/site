@@ -59,14 +59,14 @@ void run_pandoc(FILE **fp, char *content_path) {
   *fp = popen(command, "r");
 }
 
-void to_write_path(char *write_path, char* read_path) {
-    char replace_path[strlen(read_path)];
+void to_write_path(char *write_path, char *read_path) {
+  char replace_path[strlen(read_path)];
 
-    strcpy(replace_path, read_path);
+  strcpy(replace_path, read_path);
 
-    strcpy(write_path, str_replace(replace_path, ".md", ".html"));
+  strcpy(write_path, str_replace(replace_path, ".md", ".html"));
 
-    strcpy(write_path, str_replace(write_path, "content/", "build/"));
+  strcpy(write_path, str_replace(write_path, "content/", "build/"));
 }
 
 void generate_pages(StringList *list) {
