@@ -1,4 +1,5 @@
 #include "string_list.h"
+#include "string_replace.h"
 #include <dirent.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -61,6 +62,24 @@ void generate_pages(StringList *list) {
   int i = 0;
 
   while (list->strings[i] != NULL) {
+    char replace_path[strlen(list->strings[i])];
+
+    strcpy(replace_path, list->strings[i]);
+
+    char *write_path;
+
+    write_path = str_replace(replace_path, ".md", ".html");
+
+    write_path = str_replace(write_path, "content/", "static/");
+
+    printf("filepath: %s\n", write_path);
+
+    // open file to write
+
+    i++;
+
+    continue;
+
     FILE *fp = run_pandoc(list->strings[i]);
 
     char *line = NULL;
@@ -70,7 +89,7 @@ void generate_pages(StringList *list) {
     ssize_t read;
 
     while ((read = getline(&line, &len, fp)) != -1) {
-      printf("%s", line);
+      // printf("%s", line);
     }
 
     fclose(fp);
