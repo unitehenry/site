@@ -6,6 +6,7 @@
 #include <stdio.h>
 #include <string.h>
 
+char *CONTENT_TAG = "{{ content }}";
 extern char *BASE_TEMPLATE;
 
 void generate_pages(StringList *list) {
@@ -37,7 +38,7 @@ void generate_pages(StringList *list) {
 
     while ((template_read =
                 getline(&template_line, &template_len, template_fp)) != -1) {
-      if (strcmp(trim_whitespace(template_line), "{{ content }}") == 0) {
+      if (strcmp(trim_whitespace(template_line), CONTENT_TAG) == 0) {
         char *content_line = NULL;
 
         size_t content_len = 0;
