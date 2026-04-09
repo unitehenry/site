@@ -1,10 +1,4 @@
-#include "create_subdirectories.h"
-#include "path_root.h"
-#include "string_list.h"
-#include "string_replace.h"
 #include "get_content_files.h"
-#include "run_pandoc.h"
-#include "to_write_path.h"
 #include "generate_pages.h"
 #include <stdio.h>
 #include <stdlib.h>
