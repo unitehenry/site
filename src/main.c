@@ -45,19 +45,33 @@ void get_content_files(StringList *list, char *content_path) {
   closedir(dr);
 }
 
+FILE* run_pandoc(char* content_path) {
+    char *PANDOC_CMD = "pandoc ";
+
+    size_t command_len = strlen(content_path) + strlen(PANDOC_CMD) + 2;
+
+    char command[command_len];
+
+    snprintf(command, sizeof(command), "%s %s", PANDOC_CMD, content_path);
+
+    return popen(command, "w");
+}
+
 void generate_pages(StringList *list) {
   int i = 0;
 
   while (list->strings[i] != NULL) {
-    size_t command_len = strlen(list->strings[i]) + strlen("pandoc ") + 2;
+    FILE *fp = run_pandoc(list->strings[i]);
 
-    char command[command_len];
+    char *line = NULL;
 
-    snprintf(command, sizeof(command), "pandoc %s", list->strings[i]);
+    size_t len = 0;
 
-    printf("%s\n", command);
+    ssize_t read;
 
-    FILE *fp = popen(command, "w");
+    while ((read = getline(&line, &len, fp)) != -1) {
+      printf("%s", line);
+    }
 
     fclose(fp);
 
