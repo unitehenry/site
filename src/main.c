@@ -1,3 +1,4 @@
+#include "create_subdirectories.h"
 #include "string_list.h"
 #include "string_replace.h"
 #include <dirent.h>
@@ -77,6 +78,8 @@ void generate_pages(StringList *list) {
     to_write_path(write_path, list->strings[i]);
 
     printf("filepath: %s\n", write_path);
+
+    create_subdirectories(write_path);
 
     // open file to write
 
