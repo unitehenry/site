@@ -1,1 +1,1 @@
-void path_root(char **root, char* path);
+void path_root(char **root, char *path);
