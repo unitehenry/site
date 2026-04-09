@@ -35,7 +35,8 @@ void generate_pages(StringList *list) {
     // begin writing template
     FILE *template_fp = fopen(BASE_TEMPLATE, "r");
 
-    while ((template_read = getline(&template_line, &template_len, template_fp)) != -1) {
+    while ((template_read =
+                getline(&template_line, &template_len, template_fp)) != -1) {
       if (strcmp(trim_whitespace(template_line), "{{ content }}") == 0) {
         char *content_line = NULL;
 
@@ -43,7 +44,8 @@ void generate_pages(StringList *list) {
 
         ssize_t content_read;
 
-        while ((content_read = getline(&content_line, &content_len, read_fp)) != -1) {
+        while ((content_read = getline(&content_line, &content_len, read_fp)) !=
+               -1) {
           fputs(content_line, write_fp);
         }
       } else {
