@@ -26,7 +26,7 @@ main
 string_list -> strings
 string_replace -> strings
 trim_whitespace -> strings
-get_content_files -> content
+get_content_files -> generate
 generate_pages -> generate
 create_subdirectories -> generate (private)
 path_root -> generate (private)
