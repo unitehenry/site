@@ -3,13 +3,24 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "run_pandoc.h"
 #include <sys/stat.h>
 #include "libgen.h"
 
 extern char *BUILD_DIRECTORY;
 extern char *CONTENT_TAG;
 extern char *BASE_TEMPLATE;
+
+void run_pandoc(FILE **fp, char *content_path) {
+  char *PANDOC_CMD = "pandoc ";
+
+  size_t command_len = strlen(content_path) + strlen(PANDOC_CMD) + 2;
+
+  char command[command_len];
+
+  snprintf(command, sizeof(command), "%s %s", PANDOC_CMD, content_path);
+
+  *fp = popen(command, "r");
+}
 
 void path_root(char **root, char *path) {
   char *path_copy = strdup(path);
