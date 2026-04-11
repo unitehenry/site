@@ -3,12 +3,46 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
-#include "to_write_path.h"
 #include "run_pandoc.h"
 #include <sys/stat.h>
+#include "libgen.h"
 
+extern char *BUILD_DIRECTORY;
 extern char *CONTENT_TAG;
 extern char *BASE_TEMPLATE;
+
+void path_root(char **root, char *path) {
+  char *path_copy = strdup(path);
+
+  if (!path_copy) {
+    *root = NULL;
+    return;
+  }
+
+  char *dir = dirname(path_copy);
+
+  char *last_dir = malloc(strlen(dir) + 1);
+
+  strcpy(last_dir, dir);
+
+  while (strcmp(dir, ".") != 0) {
+    dir = dirname(path_copy);
+
+    if (strcmp(dir, ".") != 0) {
+      free(last_dir);
+
+      last_dir = malloc(strlen(dir) + 1);
+
+      strcpy(last_dir, dir);
+    }
+  }
+
+  *root = strdup(last_dir);
+
+  free(last_dir);
+
+  free(path_copy);
+}
 
 void get_content_files(StringList *list, char *content_path) {
   struct dirent *de;
@@ -75,6 +109,28 @@ void create_subdirectories(char *filepath) {
   mkdir(path_copy, 0755);
 
   free(path_copy);
+}
+
+void to_write_path(char **write_path, char *read_path) {
+  char replace_path[strlen(read_path)];
+
+  strcpy(replace_path, read_path);
+
+  *write_path = str_replace(replace_path, ".md", ".html");
+
+  char *root;
+
+  path_root(&root, *write_path);
+
+  char from_dir[strlen(root) + 2];
+
+  snprintf(from_dir, strlen(root) + 2, "%s/", root);
+
+  char to_dir[strlen(BUILD_DIRECTORY) + 2];
+
+  snprintf(to_dir, strlen(BUILD_DIRECTORY) + 2, "%s/", BUILD_DIRECTORY);
+
+  *write_path = str_replace(*write_path, from_dir, to_dir);
 }
 
 void generate_pages(StringList *list) {
