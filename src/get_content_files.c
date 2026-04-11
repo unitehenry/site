@@ -1,4 +1,4 @@
-#include "string_list.h"
+#include "strings.h"
 #include <dirent.h>
 #include <stdio.h>
 #include <string.h>
