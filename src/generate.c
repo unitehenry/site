@@ -1,10 +1,10 @@
+#include "libgen.h"
 #include "strings.h"
 #include <dirent.h>
 #include <stdio.h>
-#include <string.h>
 #include <stdlib.h>
+#include <string.h>
 #include <sys/stat.h>
-#include "libgen.h"
 
 extern char *BUILD_DIRECTORY;
 extern char *CONTENT_TAG;
