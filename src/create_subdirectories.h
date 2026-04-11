@@ -1,1 +1,0 @@
-void create_subdirectories(char *filepath);
