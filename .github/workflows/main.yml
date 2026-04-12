@@ -9,24 +9,41 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v4
+      - name: Checkout
+        uses: actions/checkout@v4
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: 'lts/*'
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
 
-    - name: Install clang-format
-      run: sudo apt-get update && sudo apt-get install -y clang-format
+      - name: Install clang-format
+        run: sudo apt-get update && sudo apt-get install -y clang-format
 
-    - name: Install dependencies
-      run: npm install -g prettier cspell
+      - name: Install dependencies
+        run: npm install -g prettier cspell
 
-    - name: Make scripts executable
-      run: chmod +x scripts/lint scripts/spellcheck
+      - name: Make scripts executable
+        run: chmod +x scripts/lint scripts/spellcheck
 
-    - name: Run lint
-      run: ./scripts/lint
+      - name: Run lint
+        run: ./scripts/lint
 
-    - name: Run spellcheck
-      run: ./scripts/spellcheck
+      - name: Run spellcheck
+        run: ./scripts/spellcheck
+
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install gcc
+        run: sudo apt-get update && -y build-essential gcc g++
+
+      - name: Make scripts executable
+        run: chmod +x scripts/test
+
+      - name: Run test
+        run: ./scripts/test
