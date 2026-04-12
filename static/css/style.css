@@ -1,11 +1,35 @@
+:root {
+  font-family: Departure Mono, monospace;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color-scheme:light dark;
+  --amber: #ffa133;
+  --pumpkin: #e47b1a;
+  --flux: #c8be50;
+  --foam: #bccabb;
+  --enamel: #eeeeee;
+  --cement: #c0c0c0;
+  --aluminum: #cccccc;
+  --ash: #8e8e8e;
+  --mud: #8a8a6f;
+  --clay: #6c6c58;
+  --smoke: #666666;
+  --dark: #444444;
+  --soot: #333333;
+  --carbon: #222222;
+  --black: #141414;
+  --accent: var(--amber);
+  --fg: var(--dark);
+  --bg: var(--enamel);
+  color: var(--fg);
+  background-color: var(--bg)
+}
+
 @font-face {
   font-family: DepartureMono;
   src: url("/fonts/DepartureMono-1.500/DepartureMono-Regular.woff2") format("woff2"),
        url("/fonts/DepartureMono-1.500/DepartureMono-Regular.woff") format("woff"),
        url("/fonts/DepartureMono-1.500/DepartureMono-Regular.otf") format("opentype");
-}
-
-html {
-  background: #eeeeee;
-  font-family: DepartureMono;
 }
