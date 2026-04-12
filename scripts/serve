@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+npx http-server -c-1 build &
+
+HTTP_PID=$!
+
+cleanup() {
+    kill $HTTP_PID
+}
+
+trap cleanup SIGINT SIGTERM
+
+find | entr scripts/generate
