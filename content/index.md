@@ -111,8 +111,12 @@ An effective strategy for optimizing CI pipelines in large, domain-driven projec
 
 ## Awards & Certifications
 
-- [Machine Learning](https://www.coursera.org/account/accomplishments/specialization/certificate/71VDWZPFM6HF) (November 2025)
-- [Build a Modern Computer from First Principles: Nand to Tetris Part II](https://www.coursera.org/account/accomplishments/certificate/EG4ZXUGG4DHY) (May 2024)
-- [Build a Modern Computer from First Principles: Nand to Tetris](https://www.coursera.org/account/accomplishments/certificate/EG4ZXUGG4DHY) (February 2024)
-- [Free Code Camp Full Stack Certification](https://www.freecodecamp.org/certification/fccc1c4406e-646e-478d-a7b6-771d8c2139ba/full-stack) (April 2020)
-- [**View More**](/certifications)
+[Machine Learning](https://www.coursera.org/account/accomplishments/specialization/certificate/71VDWZPFM6HF) (November 2025)
+
+[Build a Modern Computer from First Principles: Nand to Tetris Part II](https://www.coursera.org/account/accomplishments/certificate/EG4ZXUGG4DHY) (May 2024)
+
+[Build a Modern Computer from First Principles: Nand to Tetris](https://www.coursera.org/account/accomplishments/certificate/EG4ZXUGG4DHY) (February 2024)
+
+[Free Code Camp Full Stack Certification](https://www.freecodecamp.org/certification/fccc1c4406e-646e-478d-a7b6-771d8c2139ba/full-stack) (April 2020)
+
+[**View More**](/certifications)
