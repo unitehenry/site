@@ -143,10 +143,43 @@ void to_write_path(char **write_path, char *read_path) {
   *write_path = str_replace(*write_path, from_dir, to_dir);
 }
 
+void get_content_metadata(StringMap **map, char* content_path) {
+  FILE *content_fp = fopen(content_path, "r");
+
+  char *content_line = NULL;
+
+  size_t content_len = 0;
+
+  ssize_t content_read;
+
+  bool metadata_start = false;
+
+  while((content_read = getline(&content_line, &content_len, content_fp)) != -1) {
+    if (strcmp(trim_whitespace(content_line), "---") == 0) {
+      if (metadata_start) {
+        break;
+      } else {
+        metadata_start = true;
+        continue;
+      }
+    }
+
+    if (metadata_start) {
+      printf("metadata: %s", content_line);
+    }
+  }
+
+  fclose(content_fp);
+}
+
 void generate_pages(StringList *list) {
   int i = 0;
 
   while (list->strings[i] != NULL) {
+    StringMap *metadata = string_map_create();
+
+    get_content_metadata(&metadata, list->strings[i]);
+
     char *write_path;
 
     to_write_path(&write_path, list->strings[i]);
