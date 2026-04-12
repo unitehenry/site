@@ -40,7 +40,7 @@ Pages
 
 Polish
 
-- [ ] Favicon
+- [x] Favicon
 - [x] Dark Mode
 
 CI
