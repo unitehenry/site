@@ -28,8 +28,8 @@ There is a script to make recompilation easier for editing content. It will star
 ```
 Development
 
-- [ ] HTML Linter
-- [ ] CSS Linter
+- [x] HTML Linter
+- [x] CSS Linter
 
 Pages
 
