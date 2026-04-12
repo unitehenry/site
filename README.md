@@ -1,6 +1,6 @@
 ## Static Site Generator
 
-A custom static site generate written in C.
+A custom static site generator written in C.
 
 ## Usage
 
