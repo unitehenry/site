@@ -54,7 +54,7 @@ main {
   border-right: 2px dashed var(--border);
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 800px) {
   main {
     width: auto;
     border-left: none;
