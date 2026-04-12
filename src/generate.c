@@ -23,36 +23,34 @@ void run_pandoc(FILE **fp, char *content_path) {
 }
 
 void path_root(char **root, char *path) {
-  char *path_copy = strdup(path);
+  char *copy = strdup(path);
 
-  if (!path_copy) {
+  if (!copy) {
     *root = NULL;
     return;
   }
 
-  char *dir = dirname(path_copy);
+  char *dir = dirname(copy);
 
-  char *last_dir = malloc(strlen(dir) + 1);
+  char *last = NULL;
 
-  strcpy(last_dir, dir);
+  while (strcmp(dir, ".") != 0 && strcmp(dir, "/") != 0) {
+    if (last) free(last);
+    last = strdup(dir);
 
-  while (strcmp(dir, ".") != 0) {
-    dir = dirname(path_copy);
-
-    if (strcmp(dir, ".") != 0) {
-      free(last_dir);
-
-      last_dir = malloc(strlen(dir) + 1);
-
-      strcpy(last_dir, dir);
-    }
+    char *new_copy = strdup(dir);
+    free(copy);
+    copy = new_copy;
+    dir = dirname(copy);
   }
 
-  *root = strdup(last_dir);
+  if (last) {
+    *root = last;
+  } else {
+    *root = strdup(".");
+  }
 
-  free(last_dir);
-
-  free(path_copy);
+  free(copy);
 }
 
 void get_content_files(StringList *list, char *content_path) {
@@ -137,9 +135,9 @@ void to_write_path(char **write_path, char *read_path) {
 
   snprintf(from_dir, strlen(root) + 2, "%s/", root);
 
-  char to_dir[strlen(BUILD_DIRECTORY) + 2];
+  char *to_dir;
 
-  snprintf(to_dir, strlen(BUILD_DIRECTORY) + 2, "%s/", BUILD_DIRECTORY);
+  asprintf(&to_dir, "%s/", BUILD_DIRECTORY);
 
   *write_path = str_replace(*write_path, from_dir, to_dir);
 }
@@ -261,7 +259,7 @@ void generate_pages(StringList *list) {
 
     fclose(write_fp);
 
-    fclose(read_fp);
+    pclose(read_fp);
 
     i++;
   }
@@ -275,5 +273,7 @@ void copy_static() {
   asprintf(&command, "%s -rf %s/* %s", CP_CMD, STATIC_DIRECTORY,
            BUILD_DIRECTORY);
 
-  popen(command, "r");
+  FILE *fp = popen(command, "r");
+
+  pclose(fp);
 }
