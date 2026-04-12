@@ -4,7 +4,7 @@ A custom static site generator written in C.
 
 ## Usage
 
-```
+```bash
 scripts/generate
 ```
 
@@ -14,3 +14,11 @@ The following dependencies are required to run this program:
 
 - [`gcc`](https://gcc.gnu.org)
 - [`pandoc`](https://pandoc.org)
+
+## Development
+
+```bash
+scripts/serve
+```
+
+There is a script to make recompilation easier for editing content. It will start a dev server on `http://localhost:8080` and rebuild any pages that change under `content` or `static` directories.
