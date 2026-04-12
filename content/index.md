@@ -74,8 +74,44 @@ Maintained and contributed to an open source WYSIWYG editor as an internship pro
 
 ### [More Projects](/projects)
 
-## Blogs
+## Blog
+
+### Hyprland on dGPU Laptop
+
+November 14th, 2025
+
+This guide details a clever Arch Linux + Hyprland setup on a dual-boot NVIDIA dGPU laptop, allowing the user to boot directly into Hyprland on an external monitor while keeping the laptop lid closed — no keyboard interaction required.
+
+[Read More](/blog/hyprland-for-dgpu-laptop)
+
+### Domain-Driven Test Pipelines 
+
+September 13th, 2025
+
+An effective strategy for optimizing CI pipelines in large, domain-driven projects by leveraging GitHub Actions matrix workflows to run tests per domain (e.g., user, order, shipping) in parallel.
+
+[Read More](/blog/domain-driven-test-pipelines)
+
+### [More Blog Posts](/blog)
 
 ## Education
 
+### Open Source Society University
+
+2021 - 2026 | Path to a free self-taught education in Computer Science!
+
+[https://github.com/ossu/computer-science](https://github.com/ossu/computer-science)
+
+### Rowan College of South Jersey
+
+2016 - 2020 | Associate of Science
+
+[https://rcsj.edu](https://rcsj.edu)
+
 ## Awards & Certifications
+
+- [Machine Learning](https://www.coursera.org/account/accomplishments/specialization/certificate/71VDWZPFM6HF) (November 2025)
+- [Build a Modern Computer from First Principles: Nand to Tetris Part II](https://www.coursera.org/account/accomplishments/certificate/EG4ZXUGG4DHY) (May 2024)
+- [Build a Modern Computer from First Principles: Nand to Tetris](https://www.coursera.org/account/accomplishments/certificate/EG4ZXUGG4DHY) (February 2024)
+- [Free Code Camp Full Stack Certification](https://www.freecodecamp.org/certification/fccc1c4406e-646e-478d-a7b6-771d8c2139ba/full-stack) (April 2020)
+- [View More](/certifications)
