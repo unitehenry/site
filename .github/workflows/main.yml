@@ -61,3 +61,48 @@ jobs:
 
       - name: Run test
         run: ./scripts/test
+
+  build:
+    runs-on: ubuntu-latest
+    needs: [test]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Install gcc
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential gcc g++
+
+      - name: Setup Pandoc
+        uses: pandoc/actions/setup@v1
+
+      - name: Make scripts executable
+        run: chmod +x scripts/generate
+
+      - name: Run test
+        run: ./scripts/test
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          name: github-pages
+          path: build
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: [build]
+
+    permissions:
+      pages: write
+      id-token: write
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4
