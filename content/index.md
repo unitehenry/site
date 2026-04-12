@@ -44,7 +44,7 @@ September 2021 - October 2023 (1 year 7 months)
 
 March 2026
 
-An OmniParser port for the Modal platform.
+A serverless compute port of the OmniParser vision model for the Modal platform.
 
 [https://github.com/unitehenry/modal-omniparser](https://github.com/unitehenry/modal-omniparser)
 
