@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+gcc src/*.c -o site
+
+if [ $? -eq 0 ]; then
+  chmod +x site
+
+  ./site test
+fi
+
+assert() {
+  if [[ "$3" != $(cat $1 | htmlq $2 --text) ]]; then
+    echo "Failed to assert '$2'"
+    exit 1
+  fi
+}
+
+assert build/index.html '#static-site-generator' 'Static Site Generator'
+assert build/index.html '#static-site-generator + p' 'A static site generator written in C.'
