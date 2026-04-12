@@ -53,6 +53,11 @@ jobs:
           sudo tar -xzf - -C /usr/local/bin
           sudo chmod +x /usr/local/bin/htmlq
 
+      - name: Setup Pandoc
+        uses: pandoc/actions/setup@v1
+        with:
+          version: latest
+
       - name: Make scripts executable
         run: chmod +x scripts/test
 
