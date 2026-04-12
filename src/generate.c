@@ -143,7 +143,7 @@ void to_write_path(char **write_path, char *read_path) {
   *write_path = str_replace(*write_path, from_dir, to_dir);
 }
 
-void get_content_metadata(StringMap **map, char* content_path) {
+void get_content_metadata(StringMap **metadata, char* content_path) {
   FILE *content_fp = fopen(content_path, "r");
 
   char *content_line = NULL;
@@ -165,7 +165,34 @@ void get_content_metadata(StringMap **map, char* content_path) {
     }
 
     if (metadata_start) {
-      printf("metadata: %s", content_line);
+      char *token;
+
+      token = strtok(content_line, ":");
+
+      char* metadata_key = NULL;
+      char* metadata_value = NULL;
+
+      while (token != NULL) {
+        if (metadata_key != NULL && metadata_value != NULL) {
+          break;
+        }
+
+        if (metadata_key == NULL) {
+          asprintf(&metadata_key, "%s", token);
+          token = strtok(NULL, ":");
+          continue;
+        }
+
+        if (metadata_key != NULL && metadata_value == NULL) {
+          asprintf(&metadata_value, "%s", token);
+          token = strtok(NULL, ":");
+          continue;
+        }
+      }
+
+      if (metadata_key != NULL && metadata_value != NULL) {
+        string_map_put(*metadata, trim_whitespace(metadata_key), trim_whitespace(metadata_value));
+      }
     }
   }
 
