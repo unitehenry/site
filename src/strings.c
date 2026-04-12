@@ -169,3 +169,16 @@ char *string_map_get(StringMap *map, char *key) {
 
   return NULL;
 }
+
+bool string_map_contains(StringMap *map, char *key) {
+  StringMapEntry *entry = map->head;
+
+  while (entry) {
+    if (strcmp(entry->key, key) == 0) {
+      return true;
+    }
+    entry = entry->next;
+  }
+
+  return false;
+}
