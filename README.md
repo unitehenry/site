@@ -10,5 +10,7 @@ scripts/generate
 
 ### Dependencies
 
-- `gcc`
-- `pandoc`
+The following dependencies are required to run this program:
+
+- [`gcc`](https://gcc.gnu.org)
+- [`pandoc`](https://pandoc.org)
