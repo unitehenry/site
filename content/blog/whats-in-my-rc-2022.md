@@ -15,7 +15,7 @@ Also check out last years: [What's in my RC 2021](/blog/whats-in-my-rc-2021)
 
 # The Variables
 
-{{< highlight bash >}}
+```bash
 # EDITOR
 export EDITOR="vi";
 export VISUAL="vi";
@@ -28,7 +28,7 @@ export WORK="/Users/$(whoami)/Projects/lula";
 
 # Vault Address
 export VAULT_ADDR=https://vault.stallions.dev/
-{{< / highlight >}}
+```
 
 *   Continuing to use vim, so just exporting my preferred editor variables
 *   Reference my iCloud directory which I use to keep all my personal files
@@ -36,7 +36,7 @@ export VAULT_ADDR=https://vault.stallions.dev/
 
 # Credentials
 
-{{< highlight bash >}}
+```bash
 # Credentials Fetcher
 function op-create() {
   op item template get Login > /tmp/login.json;
@@ -67,13 +67,13 @@ function op-password() {
 function op-delete() {
   op item delete $@;
 }
-{{< / highlight >}}
+```
 
 I used to be anti hosted password managers, but I was recommended using 1password and their [CLI client](https://developer.1password.com/docs/cli) to manage my passwords.
 
 # Code Formatter
 
-{{< highlight bash >}}
+```bash
 ## Code Formatter
 function format-file() {
   export FILENAME="$(basename $@)";
@@ -102,43 +102,43 @@ function format-file() {
 
   unset FILENAME; unset EXTENSION;
 }
-{{< / highlight >}}
+```
 
 Using the same code formatter, but added something to handle `sql` files now!
 
 # Spell Check
 
-{{< highlight bash >}}
+```bash
 ## Spellcheck
 function spellcheck-file() {
   npx spellchecker-cli --files $@;
 }
-{{< / highlight >}}
+```
 
 Handy spellchecker utility through `npx` is always useful.
 
 # What the Commit
 
-{{< highlight bash >}}
+```bash
 ## What the Commit
 function wtf() { git commit -am "$(curl http://whatthecommit.com/index.txt)"; }
-{{< / highlight >}}
+```
 
 For when I don't know what to type in for a commit message.
 
 # Cheat Sheet
 
-{{< highlight bash >}}
+```bash
 Cheat Sheet
 ## Cheat
 function cheat(){ curl https://cheat.sh/"$@"; }
-{{< / highlight >}}
+```
 
 When I don't remember how to use a certain utility, this [cheatsheet API](https://cheat.sh/) is always handy.
 
 # Git
 
-{{< highlight bash >}}
+```bash
 ## Commit Count
 function commit-count() {
   if [ -n "$1" ]
@@ -150,11 +150,11 @@ function commit-count() {
 }
 
 Not as useful, but interesting. I use this to get the number of commits on my current working branch.
-{{< / highlight >}}
+```
 
 # Document Generation
 
-{{< highlight bash >}}
+```bash
 ## Generate Markdown
 function generate-doc() { 
   cp -rf . /tmp;
@@ -183,22 +183,22 @@ function generate-slide() {
 function mmdc() {
   npx @mermaid-js/mermaid-cli $@;
 }
-{{< / highlight >}}
+```
 
 Continuing to leverage [pandoc](https://pandoc.org/) whenever I need to create some quick slides or a document.
 
 # Homebrew Install
 
-{{< highlight bash >}}
+```bash
 ## Homebrew Install Script
 function install-homebrew() { /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"; }
-{{< / highlight >}}
+```
 
 Handy script to install [homebrew](https://brew.sh) on a new machine.
 
 # Vundle Install
 
-{{< highlight bash >}}
+```bash
 ## Vundle Install Script
 function install-vundle() {
   git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim;
@@ -208,13 +208,13 @@ function install-vundle() {
     echo "\nset nocompatible\nfiletype off\nset rtp+=~/.vim/bundle/Vundle.vim\ncall vundle#begin()\n\nPlugin 'VundleVim/Vundle.vim'\n\ncall vundle#end()\nfiletype plugin indent on" >> ~/.vimrc;
   fi
 }
-{{< / highlight >}}
+```
 
 I use [vundle](https://github.com/VundleVim/Vundle.vim) to manage my vim packages. But this [handy cli](https://github.com/baopham/vundle-cli) makes installing/removing those packages much easier.
 
 # Docker
 
-{{< highlight bash >}}
+```bash
 function clear-docker() {
   docker system prune -a -f --volumes
 }
@@ -222,7 +222,7 @@ function clear-docker() {
 function kill-docker() {
   killall Docker && open /Applications/Docker.app;
 }
-{{< / highlight >}}
+```
 
 For when I just want to wipe docker of all images, containers, and volumes.
 
@@ -230,7 +230,7 @@ Also something to help restart the docker daemon.
 
 # Google Cloud Platform
 
-{{< highlight bash >}}
+```bash
 function gcloud-adc() {
   gcloud auth login --update-adc
 }
@@ -259,7 +259,7 @@ function connect() {
     export PGPASSWORD=$(vault kv get -field=password "secrets/${CONTEXT}/postgres-terraform")
     psql -h 127.0.0.1 -p 54320  -d "${CONTEXT}"
 }
-{{< / highlight >}}
+```
 
 *   Logging into [Google ADC](https://cloud.google.com/docs/authentication/provide-credentials-adc)
 *   Setting GCP project to work with
@@ -268,7 +268,7 @@ function connect() {
 
 # Vault
 
-{{< highlight bash >}}
+```bash
 function vs() {
     # Verify inputs
     environment="$1"
@@ -306,13 +306,13 @@ function vs() {
         vault login --method oidc
     fi
 }
-{{< / highlight >}}
+```
 
 This script helps me switch [vault](https://www.vaultproject.io/) contexts for pulling secrets in different environments like staging and production.
 
 # Generate ID
 
-{{< highlight bash >}}
+```bash
 function uuid() {
     uuidgen | tr '[:upper:]' '[:lower:]'
 }
@@ -320,6 +320,6 @@ function uuid() {
 function vin() {
   echo "$(curl -sS https://randomvin.com/getvin.php\?type\=fake | tr -d '[:space:]')"
 }
-{{< / highlight >}}
+```
 
 I use this to create new uuids and new [vin numbers](https://en.wikipedia.org/wiki/Vehicle_identification_number).
