@@ -144,7 +144,7 @@ void to_write_path(char **write_path, char *read_path) {
   *write_path = str_replace(*write_path, from_dir, to_dir);
 }
 
-void get_content_metadata(StringMap **metadata, char* content_path) {
+void get_content_metadata(StringMap **metadata, char *content_path) {
   FILE *content_fp = fopen(content_path, "r");
 
   char *content_line = NULL;
@@ -155,7 +155,8 @@ void get_content_metadata(StringMap **metadata, char* content_path) {
 
   bool metadata_start = false;
 
-  while((content_read = getline(&content_line, &content_len, content_fp)) != -1) {
+  while ((content_read = getline(&content_line, &content_len, content_fp)) !=
+         -1) {
     if (strcmp(trim_whitespace(content_line), "---") == 0) {
       if (metadata_start) {
         break;
@@ -170,8 +171,8 @@ void get_content_metadata(StringMap **metadata, char* content_path) {
 
       token = strtok(content_line, ":");
 
-      char* metadata_key = NULL;
-      char* metadata_value = NULL;
+      char *metadata_key = NULL;
+      char *metadata_value = NULL;
 
       while (token != NULL) {
         if (metadata_key != NULL && metadata_value != NULL) {
@@ -192,7 +193,8 @@ void get_content_metadata(StringMap **metadata, char* content_path) {
       }
 
       if (metadata_key != NULL && metadata_value != NULL) {
-        string_map_put(*metadata, trim_whitespace(metadata_key), trim_whitespace(metadata_value));
+        string_map_put(*metadata, trim_whitespace(metadata_key),
+                       trim_whitespace(metadata_value));
       }
     }
   }
@@ -247,7 +249,8 @@ void generate_pages(StringList *list) {
         if (string_map_contains(metadata, "title")) {
           char *title_tag;
 
-          asprintf(&title_tag, "<title>%s</title>", string_map_get(metadata, "title"));
+          asprintf(&title_tag, "<title>%s</title>",
+                   string_map_get(metadata, "title"));
 
           fputs(title_tag, write_fp);
         }
