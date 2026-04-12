@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+clang-format -i src/*
+npx prettier --write templates
+npx prettier --write static/**/*.css
+
+# Check if any files in the linted directories were modified
+if git diff --name-only | grep -E '^(src/|templates/|static/)' | grep -q .; then
+  echo "Linting required edits. Files were modified."
+  exit 1
+fi
