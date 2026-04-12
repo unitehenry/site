@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+pkill -f http-server 2>/dev/null || true
+
+sleep 1
+
 npx http-server -c-1 build &
 
 HTTP_PID=$!
