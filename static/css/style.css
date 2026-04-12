@@ -11,6 +11,7 @@
   --amber: #ffa133;
   --pumpkin: #e47b1a;
   --flux: #c8be50;
+  --periwinkle: #8f99fb;
   --foam: #bccabb;
   --enamel: #eeeeee;
   --cement: #c0c0c0;
@@ -25,6 +26,7 @@
   --black: #141414;
 
   /* Theme */
+  --link: blue;
   --border: var(--smoke);
   --accent: var(--amber);
   --fg: var(--dark);
@@ -60,6 +62,10 @@ main {
     border-left: none;
     border-right: none;
   }
+}
+
+a {
+  color: var(--link);
 }
 
 h1#henry-unite {
