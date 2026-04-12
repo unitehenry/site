@@ -6,6 +6,8 @@ if [ ! -d "static/fonts/DepartureMono-1.500" ]; then
   wget https://github.com/rektdeckard/departure-mono/releases/download/v1.500/DepartureMono-1.500.zip
 
   unzip DepartureMono-1.500.zip -d static/fonts
+
+  rm DepartureMono-1.500.zip
 fi
 
 gcc src/*.c -o site
