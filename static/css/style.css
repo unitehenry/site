@@ -5,7 +5,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color-scheme:light dark;
+  color-scheme: light dark;
 
   /* Colors */
   --amber: #ffa133;
@@ -73,7 +73,7 @@ h1#henry-unite + p {
 h1#henry-unite + p + ul {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 15px;
   padding: 0;
   margin: 0;
 }

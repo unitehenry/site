@@ -1,11 +1,12 @@
 ---
-title: Henry Unite
+title: unitehenry
 ---
 
 # henry unite
 
 produce more than you consume
 
+- [X](https://x.com/unitehenry)
 - [GitHub](https://github.com/unitehenry)
 - [LinkedIn](https://linkedin.com/in/unitehenry)
 - [Itch](https://codestallion.itch.io/)
