@@ -88,6 +88,12 @@ figcaption {
   display: none;
 }
 
+blockquote {
+  margin: 0;
+  padding-left: 1rem;
+  border-left: 5px solid var(--border);
+}
+
 h1#henry-unite {
   margin-bottom: 0;
 }
