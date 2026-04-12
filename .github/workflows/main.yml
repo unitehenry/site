@@ -49,7 +49,7 @@ jobs:
 
       - name: Install htmlq
         run: |
-          wget -qO- https://github.com/mgdm/htmlq/releases/latest/download/htmlq-x86_64-linux.tar.gz
+          wget -qO- https://github.com/mgdm/htmlq/releases/latest/download/htmlq-x86_64-linux.tar.gz | \
           sudo tar -xzf - -C /usr/local/bin
           sudo chmod +x /usr/local/bin/htmlq
 
