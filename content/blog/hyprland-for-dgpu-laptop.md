@@ -89,7 +89,6 @@ For my setup, I'm not concerned with GPU acceleration over the laptop display si
 ## Dual Boot
 
 !["GRUB Menu"](/images/3aeaf408-bf5a-4529-945f-efa8fd1e7e1a.jpg)
-{ width="50%" style="display: block; margin: auto" }
 
 > But if the laptop lid is closed, how do you choose to boot into Windows from the GRUB menu?
 

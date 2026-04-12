@@ -73,6 +73,21 @@ a {
   color: var(--link);
 }
 
+figure {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+figcaption {
+  display: none;
+}
+
 h1#henry-unite {
   margin-bottom: 0;
 }
