@@ -9,4 +9,10 @@ cleanup() {
 
 trap cleanup SIGINT SIGTERM
 
-find | entr scripts/generate
+TEMP_FILES=$(mktemp)
+
+find content >> $TEMP_FILES
+
+find static >> $TEMP_FILES
+
+cat $TEMP_FILES | entr scripts/generate
