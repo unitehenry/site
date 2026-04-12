@@ -78,6 +78,6 @@ h1#henry-unite + p + ul {
   margin: 0;
 }
 
-#more-experience {
+#more-experience, #more-projects {
   font-size: 1rem;
 }
