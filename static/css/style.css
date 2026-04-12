@@ -1,6 +1,8 @@
 :root {
   /* Rendering */
-  font-family: Departure Mono, monospace;
+  font-family:
+    Departure Mono,
+    monospace;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -32,14 +34,17 @@
   --fg: var(--dark);
   --bg: var(--enamel);
   color: var(--fg);
-  background-color: var(--bg)
+  background-color: var(--bg);
 }
 
 @font-face {
   font-family: DepartureMono;
-  src: url("/fonts/DepartureMono-1.500/DepartureMono-Regular.woff2") format("woff2"),
-       url("/fonts/DepartureMono-1.500/DepartureMono-Regular.woff") format("woff"),
-       url("/fonts/DepartureMono-1.500/DepartureMono-Regular.otf") format("opentype");
+  src:
+    url("/fonts/DepartureMono-1.500/DepartureMono-Regular.woff2")
+      format("woff2"),
+    url("/fonts/DepartureMono-1.500/DepartureMono-Regular.woff") format("woff"),
+    url("/fonts/DepartureMono-1.500/DepartureMono-Regular.otf")
+      format("opentype");
 }
 
 body {
@@ -69,7 +74,7 @@ a {
 }
 
 h1#henry-unite {
- margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 h1#henry-unite + p {
@@ -84,6 +89,8 @@ h1#henry-unite + p + ul {
   margin: 0;
 }
 
-#more-experience, #more-projects, #more-blog-posts {
+#more-experience,
+#more-projects,
+#more-blog-posts {
   font-size: 1rem;
 }

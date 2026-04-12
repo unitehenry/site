@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 clang-format -i src/*
 npx prettier --write templates
+npx prettier --write static/**/*.css
