@@ -1,37 +1,14 @@
 ## Static Site Generator
 
-```
-blog/
-├── content/
-│   ├── index.md
-│   ├── blog/
-│   │   └── first-post.md
-│   └── about.md
-├── templates/
-│   └── base.html
-└── static/
-    └── css/style.css
-```
+A custom static site generate written in C.
 
-## Refactor
-
-Modules
-    - main
-    - strings
-    - content
-    - generate
+## Usage
 
 ```
-main
-string_list -> strings
-string_replace -> strings
-trim_whitespace -> strings
-get_content_files -> generate
-generate_pages -> generate
-create_subdirectories -> generate (private)
-path_root -> generate (private)
-run_pandoc -> generate (private)
-to_write_path -> genrate (private)
+scripts/generate
 ```
 
-TODO: main constants -> env vars
+### Dependencies
+
+- `gcc`
+- `pandoc`
