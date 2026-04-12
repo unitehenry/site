@@ -26,6 +26,11 @@ There is a script to make recompilation easier for editing content. It will star
 ### TODO
 
 ```
+Development
+
+- [ ] HTML Linter
+- [ ] CSS Linter
+
 Pages
 
 - [ ] Blog
