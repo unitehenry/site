@@ -202,7 +202,8 @@ void copy_static() {
 
   char *command = NULL;
 
-  asprintf(&command, "%s -rf %s/* %s", CP_CMD, STATIC_DIRECTORY, BUILD_DIRECTORY);
+  asprintf(&command, "%s -rf %s/* %s", CP_CMD, STATIC_DIRECTORY,
+           BUILD_DIRECTORY);
 
   popen(command, "r");
 }
