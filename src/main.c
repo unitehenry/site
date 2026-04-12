@@ -15,5 +15,7 @@ int main(int argc, char **argv) {
 
   generate_pages(list);
 
+  copy_static();
+
   return 0;
 }

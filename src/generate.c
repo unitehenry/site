@@ -9,9 +9,10 @@
 #define BUILD_DIRECTORY "build"
 #define BASE_TEMPLATE "templates/base.html"
 #define CONTENT_TAG "{{ content }}"
+#define STATIC_DIRECTORY "static"
 
 void run_pandoc(FILE **fp, char *content_path) {
-  char *PANDOC_CMD = "pandoc ";
+  const char *PANDOC_CMD = "pandoc ";
 
   size_t command_len = strlen(content_path) + strlen(PANDOC_CMD) + 2;
 
@@ -194,4 +195,14 @@ void generate_pages(StringList *list) {
 
     i++;
   }
+}
+
+void copy_static() {
+  const char *CP_CMD = "cp ";
+
+  char *command = NULL;
+
+  asprintf(&command, "%s -rf %s/* %s", CP_CMD, STATIC_DIRECTORY, BUILD_DIRECTORY);
+
+  popen(command, "r");
 }

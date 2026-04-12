@@ -5,5 +5,6 @@
 
 void get_content_files(StringList *list, char *content_path);
 void generate_pages(StringList *list);
+void copy_static();
 
 #endif
