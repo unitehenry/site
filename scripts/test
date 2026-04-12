@@ -17,3 +17,7 @@ assert() {
 
 assert build/index.html '#static-site-generator' 'Static Site Generator'
 assert build/index.html '#static-site-generator + p' 'A static site generator written in C.'
+assert build/index.html 'h2' 'Usage'
+assert build/index.html 'code' 'scripts/generate'
+assert build/index.html 'h3' 'Strong Test'
+assert build/index.html 'strong' 'This is strong content'
