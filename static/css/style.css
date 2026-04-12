@@ -37,6 +37,16 @@
   background-color: var(--bg);
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: color-mix(in lch, var(--enamel), var(--carbon) 100%);
+    --fg: var(--enamel);
+    --border: var(--mud);
+    --accent: var(--amber);
+    --link: var(--periwinkle);
+  }
+}
+
 @font-face {
   font-family: DepartureMono;
   src:
