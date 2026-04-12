@@ -9,6 +9,7 @@
 #define BUILD_DIRECTORY "build"
 #define BASE_TEMPLATE "templates/base.html"
 #define CONTENT_TAG "{{ content }}"
+#define TITLE_TAG "{{ title }}"
 #define STATIC_DIRECTORY "static"
 
 void run_pandoc(FILE **fp, char *content_path) {
@@ -241,6 +242,14 @@ void generate_pages(StringList *list) {
         while ((content_read = getline(&content_line, &content_len, read_fp)) !=
                -1) {
           fputs(content_line, write_fp);
+        }
+      } else if (strcmp(trim_whitespace(template_line), TITLE_TAG) == 0) {
+        if (string_map_contains(metadata, "title")) {
+          char *title_tag;
+
+          asprintf(&title_tag, "<title>%s</title>", string_map_get(metadata, "title"));
+
+          fputs(title_tag, write_fp);
         }
       } else {
         fputs(template_line, write_fp);
