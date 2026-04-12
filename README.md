@@ -42,5 +42,6 @@ CI
 
 - [ ] Test
 - [ ] Spellcheck
+- [ ] Linter
 - [ ] GitHub Pages
 ```
