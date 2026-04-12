@@ -33,7 +33,7 @@ Development
 
 Pages
 
-- [ ] Blog
+- [x] Blog
 - [ ] Experience
 - [ ] Projects
 - [ ] Certifications
