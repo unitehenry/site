@@ -3,7 +3,7 @@ title: Hyprland on dGPU Laptop
 description: Hyprland on dGPU Laptop
 ---
 
-## Hyprland on dGPU Laptop
+# Hyprland on dGPU Laptop
 
 2025-11-14
 

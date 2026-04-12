@@ -3,7 +3,7 @@ title: Money (25)
 description: How I Think About Money
 ---
 
-## Money (25)
+# Money (25)
 
 2024-06-07
 

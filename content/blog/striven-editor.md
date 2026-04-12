@@ -3,7 +3,7 @@ title: Striven Editor
 description: Blog post about the Striven Editor.
 ---
 
-## Striven Editor
+# Striven Editor
 
 2019-10-27
 

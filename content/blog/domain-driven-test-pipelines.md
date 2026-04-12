@@ -3,7 +3,7 @@ title: Domain-Driven Test Pipelines
 description: Parallelizing tests by domain with matrix strategies.
 ---
 
-## Domain-Driven Test Pipelines
+# Domain-Driven Test Pipelines
 
 2025-09-13
 

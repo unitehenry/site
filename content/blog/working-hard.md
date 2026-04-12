@@ -3,7 +3,7 @@ title: Working Hard
 description: Blog post about working hard.
 ---
 
-## Working Hard
+# Working Hard
 
 2024-06-23
 
