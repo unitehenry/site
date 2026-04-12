@@ -1,8 +1,11 @@
-+++
-title = "Building My Portfolio Website With Nextjs"
-date = "2020-11-20"
-tags = []
-+++
+---
+title: Building My Portfolio Website With Nextjs
+description: Blog post about building a portfolio website with Nextjs.
+---
+
+## Building My Portfolio Website With Nextjs
+
+2020-11-20
 
 It's time for a new portfolio website! This time I decided to use Next.js to generate my static site with these principles in mind:
 

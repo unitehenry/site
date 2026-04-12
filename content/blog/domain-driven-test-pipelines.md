@@ -1,9 +1,11 @@
-+++
-title = "Domain-Driven Test Pipelines"
-date = "2025-09-13"
-description = "Parallelizing tests by domain with matrix strategies."
-tags = []
-+++
+---
+title: Domain-Driven Test Pipelines
+description: Parallelizing tests by domain with matrix strategies.
+---
+
+## Domain-Driven Test Pipelines
+
+2025-09-13
 
 When building CI pipelines, a [matrix strategy](https://docs.github.com/en/actions/how-tos/write-workflows/choose-what-workflows-do/run-job-variations) is a configuration setup that allows a CI system to run multiple tests or build jobs in parallel with different combinations of parameters. For example, building by operating systems, programming language versions, or environment settings. Typically these are used to run tests against multiple environments and versions of software. For example, running python tests across different versions of python on different operating systems.
 

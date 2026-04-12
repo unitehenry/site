@@ -1,7 +1,11 @@
-+++
-title = "Working Hard"
-date = "2024-06-23"
-+++
+---
+title: Working Hard
+description: Blog post about working hard.
+---
+
+## Working Hard
+
+2024-06-23
 
 *The topics in this article are tangential to each other. But I just wanted to write down some concepts around my work ethic that I've learned over the years.*
 

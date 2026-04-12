@@ -1,7 +1,11 @@
-+++
-title = "What's in My RC 2021"
-date = "2021-05-29"
-+++
+---
+title: What's in My RC 2021
+description: Blog post about what's in my RC 2021.
+---
+
+## What's in My RC 2021
+
+2021-05-29
 
 Welcome to a tour of my `.zshrc` file! I thought it would be fun to take a dive into the different tools I use to elevate my developer game.
 

@@ -1,9 +1,11 @@
-+++
-title = "Hyprland on dGPU Laptop"
-date = "2025-11-14"
-description = "Hyprland on dGPU Laptop"
-tags = []
-+++
+---
+title: Hyprland on dGPU Laptop
+description: Hyprland on dGPU Laptop
+---
+
+## Hyprland on dGPU Laptop
+
+2025-11-14
 
 !["Amazon Laptop"](/images/4743cffc-b34b-415c-8333-1e6f47be1efc.png)
 

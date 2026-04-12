@@ -1,9 +1,11 @@
-+++
-title = "Money (25)"
-date = "2024-06-07"
-description = "How I Think About Money"
-tags = []
-+++
+---
+title: Money (25)
+description: How I Think About Money
+---
+
+## Money (25)
+
+2024-06-07
 
 This is how I (25 years old and broke\*) currently think about money.
 
