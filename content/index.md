@@ -14,7 +14,7 @@ produce more than you consume
 
 ### Atlas
 
-YC-Backend Fintech Startup
+YC Backend Fintech Startup
 
 **Senior Software Engineer**
 September 2025 - Present (8 months)
