@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 
+mkdir -p static/fonts
+
+if [ ! -d "static/fonts/DepartureMono-1.500" ]; then
+  wget https://github.com/rektdeckard/departure-mono/releases/download/v1.500/DepartureMono-1.500.zip
+
+  unzip DepartureMono-1.500.zip -d static/fonts
+fi
+
 gcc src/*.c -o site
 
 if [ $? -eq 0 ]; then
