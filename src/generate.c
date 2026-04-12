@@ -6,9 +6,9 @@
 #include <string.h>
 #include <sys/stat.h>
 
-extern char *BUILD_DIRECTORY;
-extern char *CONTENT_TAG;
-extern char *BASE_TEMPLATE;
+#define BUILD_DIRECTORY "build"
+#define BASE_TEMPLATE "templates/base.html"
+#define CONTENT_TAG "{{ content }}"
 
 void run_pandoc(FILE **fp, char *content_path) {
   char *PANDOC_CMD = "pandoc ";
