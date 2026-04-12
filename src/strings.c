@@ -125,3 +125,47 @@ char *trim_whitespace(const char *str) {
 
   return result;
 }
+
+StringMap *string_map_create(void) {
+  StringMap *map = malloc(sizeof(StringMap));
+
+  if (!map)
+    return NULL;
+
+  map->head = NULL;
+
+  return map;
+}
+
+void string_map_put(StringMap *map, char *key, char *value) {
+  StringMapEntry *entry = map->head;
+
+  while (entry) {
+    if (strcmp(entry->key, key) == 0) {
+      free(entry->value);
+      entry->value = strdup(value);
+      return;
+    }
+    entry = entry->next;
+  }
+
+  StringMapEntry *new_entry = malloc(sizeof(StringMapEntry));
+
+  new_entry->key = strdup(key);
+  new_entry->value = strdup(value);
+  new_entry->next = map->head;
+  map->head = new_entry;
+}
+
+char *string_map_get(StringMap *map, char *key) {
+  StringMapEntry *entry = map->head;
+
+  while (entry) {
+    if (strcmp(entry->key, key) == 0) {
+      return entry->value;
+    }
+    entry = entry->next;
+  }
+
+  return NULL;
+}
