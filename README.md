@@ -34,9 +34,9 @@ Development
 Pages
 
 - [x] Blog
-- [ ] Experience
+- [x] Experience
 - [ ] Projects
-- [ ] Certifications
+- [x] Certifications
 
 Polish
 
