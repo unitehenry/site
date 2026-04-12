@@ -22,3 +22,25 @@ scripts/serve
 ```
 
 There is a script to make recompilation easier for editing content. It will start a dev server on `http://localhost:8080` and rebuild any pages that change under `content` or `static` directories.
+
+### TODO
+
+```
+Pages
+
+- [ ] Blog
+- [ ] Experience
+- [ ] Projects
+- [ ] Certifications
+
+Polish
+
+- [ ] Favicon
+- [ ] Dark Mode
+
+CI
+
+- [ ] Test
+- [ ] Spellcheck
+- [ ] GitHub Pages
+```
