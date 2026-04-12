@@ -81,8 +81,8 @@ jobs:
       - name: Make scripts executable
         run: chmod +x scripts/generate
 
-      - name: Run test
-        run: ./scripts/test
+      - name: Generate site
+        run: ./scripts/generate
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
