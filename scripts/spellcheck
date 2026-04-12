@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-npx cspell content
+npx cspell -c test/cspell.json content
