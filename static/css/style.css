@@ -1,10 +1,13 @@
 :root {
+  /* Rendering */
   font-family: Departure Mono, monospace;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color-scheme:light dark;
+
+  /* Colors */
   --amber: #ffa133;
   --pumpkin: #e47b1a;
   --flux: #c8be50;
@@ -20,6 +23,9 @@
   --soot: #333333;
   --carbon: #222222;
   --black: #141414;
+
+  /* Theme */
+  --border: var(--smoke);
   --accent: var(--amber);
   --fg: var(--dark);
   --bg: var(--enamel);
@@ -32,4 +38,26 @@
   src: url("/fonts/DepartureMono-1.500/DepartureMono-Regular.woff2") format("woff2"),
        url("/fonts/DepartureMono-1.500/DepartureMono-Regular.woff") format("woff"),
        url("/fonts/DepartureMono-1.500/DepartureMono-Regular.otf") format("opentype");
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  justify-items: center;
+  margin: 0;
+}
+
+main {
+  width: 720px;
+  padding: 2rem;
+  border-left: 2px dashed var(--border);
+  border-right: 2px dashed var(--border);
+}
+
+@media screen and (max-width: 720px) {
+  main {
+    width: auto;
+    border-left: none;
+    border-right: none;
+  }
 }
