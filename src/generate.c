@@ -205,6 +205,11 @@ void generate_pages(StringList *list) {
   int i = 0;
 
   while (list->strings[i] != NULL) {
+    if (strcmp(trim_whitespace(list->strings[i]), "") == 0) {
+      i++;
+      continue;
+    }
+
     StringMap *metadata = string_map_create();
 
     get_content_metadata(&metadata, list->strings[i]);
