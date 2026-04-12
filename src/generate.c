@@ -35,7 +35,8 @@ void path_root(char **root, char *path) {
   char *last = NULL;
 
   while (strcmp(dir, ".") != 0 && strcmp(dir, "/") != 0) {
-    if (last) free(last);
+    if (last)
+      free(last);
     last = strdup(dir);
 
     char *new_copy = strdup(dir);
