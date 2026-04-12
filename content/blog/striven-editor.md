@@ -25,7 +25,7 @@ These were some notable candidates:
 
 ## Quill
 
-Quill would be great; its open source, inline, and used by top companies. My experience when trying to integrate with the editor invloved the developer push for the adoption of the editor's [delta](https://quilljs.com/docs/delta/) api.
+Quill would be great; its open source, inline, and used by top companies. My experience when trying to integrate with the editor involved the developer push for the adoption of the editor's [delta](https://quilljs.com/docs/delta/) api.
 
 My advice to anyone trying to include this control in their project is that you'll have a much easier time designing your system with the concept of delta in mind than trying to bring the concept of the quill editor and its delta api into an existing system.
 

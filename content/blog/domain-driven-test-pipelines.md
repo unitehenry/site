@@ -53,9 +53,9 @@ As your codebase grows and your tests grow with it, any tests that require exter
 
 What if we leveraged the build matrix mechanism to run these tests in parallel? Each domain would run it's tests with it's own DB instance and in isolation of other domains.
 
-## Parametrizing Test Jobs
+## Parameterizing Test Jobs
 
-If you're using [GitHub Actions](https://docs.github.com/en/actions), it's common to use [reusable workflows](https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows) to reuse existing snippets of steps to run your jobs. This is especially useful when parametrizing the domain of tests that we intend to run.
+If you're using [GitHub Actions](https://docs.github.com/en/actions), it's common to use [reusable workflows](https://docs.github.com/en/actions/how-tos/reuse-automations/reuse-workflows) to reuse existing snippets of steps to run your jobs. This is especially useful when parameterizing the domain of tests that we intend to run.
 
 ### Gradle Example
 
