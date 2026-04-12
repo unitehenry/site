@@ -18,7 +18,9 @@ jobs:
           node-version: 'lts/*'
 
       - name: Install clang-format
-        run: sudo apt-get update && sudo apt-get install -y clang-format
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y clang-format
 
       - name: Install dependencies
         run: npm install -g prettier cspell
@@ -34,13 +36,16 @@ jobs:
 
   test:
     runs-on: ubuntu-latest
+    needs: [check]
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Install gcc
-        run: sudo apt-get update && -y build-essential gcc g++
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential gcc g++
 
       - name: Make scripts executable
         run: chmod +x scripts/test
