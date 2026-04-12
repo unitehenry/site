@@ -12,13 +12,11 @@
 #define STATIC_DIRECTORY "static"
 
 void run_pandoc(FILE **fp, char *content_path) {
-  const char *PANDOC_CMD = "pandoc ";
+  const char *PANDOC_CMD = "pandoc";
 
-  size_t command_len = strlen(content_path) + strlen(PANDOC_CMD) + 2;
+  char *command;
 
-  char command[command_len];
-
-  snprintf(command, sizeof(command), "%s %s", PANDOC_CMD, content_path);
+  asprintf(&command, "%s %s", PANDOC_CMD, content_path);
 
   *fp = popen(command, "r");
 }
@@ -198,7 +196,7 @@ void generate_pages(StringList *list) {
 }
 
 void copy_static() {
-  const char *CP_CMD = "cp ";
+  const char *CP_CMD = "cp";
 
   char *command = NULL;
 
