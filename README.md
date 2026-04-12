@@ -35,7 +35,7 @@ Pages
 
 - [x] Blog
 - [x] Experience
-- [ ] Projects
+- [x] Projects
 - [x] Certifications
 
 Polish
