@@ -50,7 +50,7 @@ Micromobility Bikeshare Operator Company
 **Full Stack Developer**
 December 2020 - August 2021 (9 months)
 
-**Skills:** PHP, Python, Django, Vue, Wordpress, MySQL, Ansible
+**Skills:** PHP, Python, Flask, Vue, Wordpress, MySQL, Ansible
 
 [https://www.bicycletransit.com](https://www.bicycletransit.com)
 
