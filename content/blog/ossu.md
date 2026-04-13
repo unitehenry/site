@@ -18,7 +18,7 @@ One of the reasons I decided to pursue this curriculum was because I didn't fini
 
 ## My Journey
 
-It took me six years years to complete all the courses, but realisticly I could've done it in two years like the curriculum suggests. But I had taken many breaks between courses. I would only take one course at a time, and do most of my studies on the weekend.
+It took me six years years to complete all the courses, but realistically I could've done it in two years like the curriculum suggests. But I had taken many breaks between courses. I would only take one course at a time, and do most of my studies on the weekend.
 
 ### Timeline
 
@@ -57,7 +57,7 @@ Here is a timeline of the 30 courses I took:
 
 ### Notable Events
 
-Some notable events that occured during my six year journey with OSSU:
+Some notable events that occurred during my six year journey with OSSU:
 
 - 2021: Started OSSU at the tail-end of the pandemic.
 - 2022: Moved from Philadelphia to Miami to work at a startup.
@@ -67,11 +67,11 @@ Some notable events that occured during my six year journey with OSSU:
 
 ## Best Courses
 
-The **Nand2Tetris** course *changed my life*. It enstilled confidence in me and provided a grass roots framework to reason about topics in the field of computer science. You literally build a computer in this course. It's such a simple and elegant idea.
+The **Nand2Tetris** course *changed my life*. It instilled confidence in me and provided a grass roots framework to reason about topics in the field of computer science. You literally build a computer in this course. It's such a simple and elegant idea.
 
-The **Machine Learning** specialization is a great example of what a high quality course looks like. It's less project focused, but Andrew Ng does a great job breaking down machine learning concepts from first princinples. The cadence is: practical example, underlying algorithm, implement in code, and a jupyter notebook to test your intuition.
+The **Machine Learning** specialization is a great example of what a high quality course looks like. It's less project focused, but Andrew Ng does a great job breaking down machine learning concepts from first principles. The cadence is: practical example, underlying algorithm, implement in code, and a jupyter notebook to test your intuition.
 
-## Takeways
+## Takeaways
 
 After OSSU, I now have a solid foundation to reason about ideas in computer science from first principles.
 
@@ -117,13 +117,13 @@ This curriculum really made me consider the future of education. Especially in a
 
 > It's not merely for career training or professional development. It's for those who want a proper, well-rounded grounding in concepts fundamental to all computing disciplines, and for those who have the discipline, will, and (most importantly!) good habits to obtain this education largely on their own, but with support from a worldwide community of fellow learners.
 
-It's sort of redundant, but it's true. Don't go into this with the exepectation of becoming certified or progressing your career. It's so much more than that.
+It's sort of redundant, but it's true. Don't go into this with the expectation of becoming certified or progressing your career. It's so much more than that.
 
 Go into it with the intention of learning and reasoning about computer science from first principles.
 
 It's about building a habit to learn, and discovering how you as an individual can learn effectively.
 
-On a more practical note, if you're rougher on math than programming like I was, **Discrete Mathematics for Computer Science** helped me immensly.
+On a more practical note, if you're rougher on math than programming like I was, **Discrete Mathematics for Computer Science** helped me immensely.
 
 ## What's Next
 
