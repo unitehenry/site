@@ -4,20 +4,74 @@ title: Blog
 
 # Blog
 
-[Hyprland on dGPU Laptop](hyprland-for-dgpu-laptop) -- 2025-11-14
+## Hyprland on dGPU Laptop
 
-[Domain-Driven Test Pipelines](domain-driven-test-pipelines) -- 2025-09-13
+November 14th, 2025
 
-[AI (2025)](ai-2025) -- 2025-04-19
+This guide details a clever Arch Linux + Hyprland setup on a dual-boot NVIDIA dGPU laptop, allowing the user to boot directly into Hyprland on an external monitor while keeping the laptop lid closed — no keyboard interaction required.
 
-[Working Hard](working-hard) -- 2024-06-23
+[Read More](/blog/hyprland-for-dgpu-laptop)
 
-[Money (25)](money-25) -- 2024-06-07
+## Domain-Driven Test Pipelines 
 
-[What's in My RC 2022](whats-in-my-rc-2022) -- 2022-12-19
+September 13th, 2025
 
-[What's in My RC 2021](whats-in-my-rc-2021) -- 2021-05-29
+An effective strategy for optimizing CI pipelines in large, domain-driven projects by leveraging GitHub Actions matrix workflows to run tests per domain (e.g., user, order, shipping) in parallel.
 
-[Building My Portfolio Website With Nextjs](building-my-portfolio-website-with-nextjs) -- 2020-11-20
+[Read More](/blog/domain-driven-test-pipelines)
 
-[Striven Editor](striven-editor) -- 2019-10-27
+## AI (2025)
+
+April 19th, 2025
+
+My thoughts on AI in the year 2025.
+
+[Read More](/blog/ai-2025)
+
+## Working Hard
+
+June 23rd, 2024
+
+Blog post about working hard.
+
+[Read More](/blog/working-hard)
+
+## Money (25)
+
+June 7th, 2024
+
+How I think about money at 25 years old.
+
+[Read More](/blog/money-25)
+
+## What's in My RC 2022
+
+December 19th, 2022
+
+A tour my RC file in 2022.
+
+[Read More](/blog/whats-in-my-rc-2022)
+
+## What's in My RC 2021
+
+May 29th, 2021
+
+A tour of my RC file in 2021.
+
+[Read More](/blog/whats-in-my-rc-2021)
+
+## Building My Portfolio Website With Nextjs
+
+November 20th, 2020
+
+Blog post about building a portfolio website with Nextjs.
+
+[Read More](/blog/building-my-portfolio-website-with-nextjs)
+
+## Striven Editor
+
+October 27th, 2019
+
+At Striven, I led the research and development of a lightweight, in-house WYSIWYG editor to replace the heavy Kendo UI component.
+
+[Read More](/blog/striven-editor)

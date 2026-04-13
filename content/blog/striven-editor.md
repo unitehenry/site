@@ -1,6 +1,6 @@
 ---
 title: Striven Editor
-description: Blog post about the Striven Editor.
+description: At Striven, I led the research and development of a lightweight, in-house WYSIWYG editor to replace the heavy Kendo UI component.
 ---
 
 # Striven Editor

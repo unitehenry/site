@@ -1,6 +1,6 @@
 ---
 title: Money (25)
-description: How I Think About Money
+description: How I think about money at 25 years old.
 ---
 
 # Money (25)

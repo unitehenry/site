@@ -1,6 +1,6 @@
 ---
 title: What's in My RC 2021
-description: Blog post about what's in my RC 2021.
+description: A tour of my RC file in 2021.
 ---
 
 # What's in My RC 2021

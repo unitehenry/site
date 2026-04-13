@@ -1,6 +1,6 @@
 ---
 title: Domain-Driven Test Pipelines
-description: Parallelizing tests by domain with matrix strategies.
+description: An effective strategy for optimizing CI pipelines in large, domain-driven projects by leveraging GitHub Actions matrix workflows to run tests per domain (e.g., user, order, shipping) in parallel.
 ---
 
 # Domain-Driven Test Pipelines

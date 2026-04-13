@@ -1,6 +1,6 @@
 ---
 title: Hyprland on dGPU Laptop
-description: Hyprland on dGPU Laptop
+description: This guide details a clever Arch Linux + Hyprland setup on a dual-boot NVIDIA dGPU laptop, allowing the user to boot directly into Hyprland on an external monitor while keeping the laptop lid closed — no keyboard interaction required.
 ---
 
 # Hyprland on dGPU Laptop
