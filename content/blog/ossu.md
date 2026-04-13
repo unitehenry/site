@@ -75,7 +75,7 @@ The **Machine Learning** specialization is a great example of what a high qualit
 
 After OSSU, I now have a solid foundation to reason about ideas in computer science from first principles.
 
-In a traditional school setting, I was easily bored and distracted. I always thought I was a bad student, but OSSU was a perfect self-paced medium for me to grasp the material of a subject and actually learn! Which makes me think of all the other people who struggle to learn in those settings too, and if only they could opt for a track like OSSU instead.
+In a traditional school setting, I was easily bored and distracted. I always thought I was a bad student, but OSSU was a perfect self-paced medium for me to grasp the material of a subject and actually learn! Which makes me think of all the other people who struggle to learn in those types of settings too, and if only they could opt for a track like OSSU instead.
 
 The curriculum maintainers put a lot of thought into what courses to feature and it is amongst the best free material accessible to anyone in the world.
 
