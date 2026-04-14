@@ -24,7 +24,7 @@ cat $BLOG_INDEX | htmlq -a id h2 | while read -r line; do
 
   echo '<item>'
   echo "<title>$TITLE</title>"
-  echo "<link>$PUBLIC_URL/blog/$SLUG</link>"
+  echo "<link>$PUBLIC_URL$SLUG</link>"
   echo "<description>$DESCRIPTION</description>"
   echo "<pubDate>$PUBDATE</pubDate>"
   echo "<content:encoded><![CDATA[$CONTENT]]></content:encoded>"
