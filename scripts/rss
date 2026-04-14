@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 RSS_TITLE="unitehenry"
 RSS_DESCRIPTION="cracked software engineer"
