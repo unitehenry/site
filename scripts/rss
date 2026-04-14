@@ -1,9 +1,33 @@
 #!/bin/bash
 
-cat build/blog/index.html | htmlq -a id h2 | while read -r line; do
-  TITLE=$(cat build/blog/index.html | htmlq -t "#$line")
-  DATE=$(cat build/blog/index.html | htmlq -t "#$line + p")
-  DESCRIPTION=$(cat build/blog/index.html | htmlq -t "#$line + p + p")
-  SLUG=$(cat build/blog/index.html | htmlq -a href "#$line + p + p + p a")
-  CONTENT=$(cat "build/$SLUG.html" | htmlq main) # TODO: remove main tags
+PUBLIC_URL="https://unitehenry.com"
+BLOG_INDEX="build/blog/index.html"
+
+echo '<?xml version="1.0" encoding="UTF-8"?>'
+echo '<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">'
+echo '<channel>'
+echo '<title>unitehenry</title>'
+echo "<link>$PUBLIC_URL/blog</link>"
+echo '<description>cracked software engineer</description>'
+echo '<language>en-us</language>'
+
+cat $BLOG_INDEX | htmlq -a id h2 | while read -r line; do
+  TITLE=$(cat $BLOG_INDEX | htmlq -t "#$line")
+  DATE=$(cat $BLOG_INDEX | htmlq -t "#$line + p")
+  DESCRIPTION=$(cat $BLOG_INDEX | htmlq -t "#$line + p + p")
+  SLUG=$(cat $BLOG_INDEX | htmlq -a href "#$line + p + p + p a")
+  CONTENT=$(cat "build/$SLUG.html" | htmlq main | sed 's/<main>//;s/<\/main>//')
+  CLEAN_DATE=$(echo "$DATE" | sed 's/th//;s/st//;s/nd//;s/rd//')
+  PUBDATE=$(date -R -d "$CLEAN_DATE" 2>/dev/null || echo "$DATE")
+
+  echo '<item>'
+  echo "<title>$TITLE</title>"
+  echo "<link>$PUBLIC_URL/blog/$SLUG</link>"
+  echo "<description>$DESCRIPTION</description>"
+  echo "<pubDate>$PUBDATE</pubDate>"
+  echo "<content:encoded><![CDATA[$CONTENT]]></content:encoded>"
+  echo '</item>'
 done
+
+echo '</channel>'
+echo '</rss>'
