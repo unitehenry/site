@@ -4,6 +4,8 @@ title: Blog
 
 # Blog
 
+[RSS](/blog/rss.xml)
+
 ## Hyprland on dGPU Laptop
 
 November 14th, 2025
