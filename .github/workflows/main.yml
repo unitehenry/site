@@ -75,14 +75,23 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y build-essential gcc g++
 
+      - name: Install htmlq
+        run: |
+          wget -qO- https://github.com/mgdm/htmlq/releases/latest/download/htmlq-x86_64-linux.tar.gz | \
+          sudo tar -xzf - -C /usr/local/bin
+          sudo chmod +x /usr/local/bin/htmlq
+
       - name: Setup Pandoc
         uses: pandoc/actions/setup@v1
 
       - name: Make scripts executable
-        run: chmod +x scripts/generate
+        run: chmod +x scripts/generate scripts/rss
 
       - name: Generate site
         run: ./scripts/generate
+
+      - name: Generate rss feed
+        run: ./scripts/rss > build/blog/rss.xml
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5.0.0
