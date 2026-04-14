@@ -37,6 +37,7 @@ If I run out of money, I will [cut my burn](#cut-your-burn) and make more so I c
 > Until we have begun to go without them, we fail to realize how unnecessary many things are. We’ve been using them not because we needed them but because we had them. -- Seneca
 
 Here is a list of my material possessions:
+
 - Phone
 - Laptop
 - Clothes
@@ -70,6 +71,7 @@ As for everything else in life, all I say is: fuck off and leave me alone.
 That being said, we are people, and there are things that are nice to have.
 
 Here are the things that I find nice to have:
+
 - Designer hoodies
 - Dining at nice restaurants
 - Living in a nice condo with amenities
@@ -133,6 +135,7 @@ There are things in life you just have to pay for whether you like it or not, bu
 For the most part, all my money goes to two major categories: rent and food.
 
 Since these are the two major categories of my spend, then I have two ways to cut my burn:
+
 - [Move to a cheaper place to live (roommates if necessary)](#short-term-living)
 - [Don't go out to eat or get food delivered](#eating-out)
 
