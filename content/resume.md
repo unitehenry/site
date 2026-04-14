@@ -135,7 +135,7 @@ Maintained and contributed to an open source WYSIWYG editor as an internship pro
 
 2021 - 2026 | Path to a free self-taught education in Computer Science!
 
-[https://github.com/ossu/computer-science](https://github.com/ossu/computer-science)
+[https://unitehenry.com/blog/ossu](https://unitehenry.com/blog/ossu)
 
 ### Rowan College of South Jersey
 

@@ -5,7 +5,7 @@ description: After five years of self-paced study alongside full-time software e
 
 # OSSU
 
-2026-04-15 (draft)
+2026-05-01
 
 !["OSSU Banner"](/images/8cc993bf-9322-408a-95f6-4157f42001bf.webp)
 
