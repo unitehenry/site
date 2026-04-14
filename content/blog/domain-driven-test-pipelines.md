@@ -243,6 +243,7 @@ Given the gradle example earlier, build tools might have parallel testing mechan
 - Threads used for tests constrained by the amount of CPU cores the runners have
 
 When parallelizing  tests by project domain, here are some of the benefits that these changes yield:
+
 - Physical isolation of resources and domains per set of tests, reducing resource constraints like database connections
 - Run more tests in parallel, reducing the time it takes for developers to get feedback on their features
 - Less tests ran on a per feature basis, reducing billable CI minutes
