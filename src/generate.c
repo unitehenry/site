@@ -10,6 +10,7 @@
 #define BASE_TEMPLATE "templates/base.html"
 #define CONTENT_TAG "{{ content }}"
 #define TITLE_TAG "{{ title }}"
+#define DESCRIPTION_TAG "{{ description }}"
 #define STATIC_DIRECTORY "static"
 
 void run_pandoc(FILE **fp, char *content_path) {
@@ -253,8 +254,17 @@ void generate_pages(StringList *list) {
         if (string_map_contains(metadata, "title")) {
           char *title_tag;
 
-          asprintf(&title_tag, "<title>%s</title>",
+          asprintf(&title_tag, "<title>%s</title>\n",
                    string_map_get(metadata, "title"));
+
+          fputs(title_tag, write_fp);
+        }
+      } else if (strcmp(trim_whitespace(template_line), DESCRIPTION_TAG) == 0) {
+        if (string_map_contains(metadata, "description")) {
+          char *title_tag;
+
+          asprintf(&title_tag, "<meta name=\"description\" content=\"%s\" />\n",
+                   string_map_get(metadata, "description"));
 
           fputs(title_tag, write_fp);
         }
