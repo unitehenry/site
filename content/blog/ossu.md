@@ -7,7 +7,7 @@ description: After six years of self-paced study alongside full-time software en
 
 2026-04-15 (draft)
 
-!["OSSU Banner"](https://raw.githubusercontent.com/ossu/computer-science/master/images/ossu-logo.webp)
+!["OSSU Banner"](/images/8cc993bf-9322-408a-95f6-4157f42001bf.webp)
 
 I just completed the core material of the [OSSU Computer Science](https://github.com/ossu/computer-science) curriculum.
 
