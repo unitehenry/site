@@ -1,14 +1,16 @@
 #!/bin/bash
 
+RSS_TITLE="unitehenry"
+RSS_DESCRIPTION="cracked software engineer"
 PUBLIC_URL="https://unitehenry.com"
 BLOG_INDEX="build/blog/index.html"
 
 echo '<?xml version="1.0" encoding="UTF-8"?>'
 echo '<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/">'
 echo '<channel>'
-echo '<title>unitehenry</title>'
+echo "<title>$RSS_TITLE</title>"
 echo "<link>$PUBLIC_URL/blog</link>"
-echo '<description>cracked software engineer</description>'
+echo "<description>$RSS_DESCRIPTION</description>"
 echo '<language>en-us</language>'
 
 cat $BLOG_INDEX | htmlq -a id h2 | while read -r line; do
