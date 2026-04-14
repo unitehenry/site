@@ -6,6 +6,14 @@ title: Blog
 
 [RSS](/blog/rss.xml)
 
+## OSSU
+
+May 1st, 2026
+
+After six years of self-paced study alongside full-time software engineering work, I’ve finished the core of the Open Source Society University (OSSU) Computer Science curriculum.
+
+[Read More](/blog/hyprland-for-dgpu-laptop)
+
 ## Hyprland on dGPU Laptop
 
 November 14th, 2025
