@@ -261,12 +261,13 @@ void generate_pages(StringList *list) {
         }
       } else if (strcmp(trim_whitespace(template_line), DESCRIPTION_TAG) == 0) {
         if (string_map_contains(metadata, "description")) {
-          char *title_tag;
+          char *description_tag;
 
-          asprintf(&title_tag, "<meta name=\"description\" content=\"%s\" />\n",
+          asprintf(&description_tag,
+                   "<meta name=\"description\" content=\"%s\" />\n",
                    string_map_get(metadata, "description"));
 
-          fputs(title_tag, write_fp);
+          fputs(description_tag, write_fp);
         }
       } else {
         fputs(template_line, write_fp);
