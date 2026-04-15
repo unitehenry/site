@@ -34,6 +34,7 @@ You should always be talking to your customers. A customer can be more than just
 This guiding principle is used to ensure that you are always working on the right thing. Don't wait for answers, or make assumptions; pick up the phone, and call the person who is expecting the deliverable you're working on.
 
 The skill here is not talking to customers. It is the ability to delete requirements.
+
 ### Make An Impact
 
 The goal here is to always make sure you're working on the right thing, and then actually doing the thing (aka writing code).
