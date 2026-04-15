@@ -1,6 +1,6 @@
 ---
 title: What's in My RC 2022
-description: A tour my RC file in 2022.
+description: A tour of my RC file in 2022.
 ---
 
 # What's in My RC 2022

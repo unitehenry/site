@@ -34,7 +34,7 @@ My thoughts on AI in the year 2025.
 
 June 23rd, 2024
 
-Blog post about working hard.
+Some concepts around my work ethic that I've learned over the years.
 
 [Read More](/blog/working-hard)
 
@@ -50,7 +50,7 @@ How I think about money at 25 years old.
 
 December 19th, 2022
 
-A tour my RC file in 2022.
+A tour of my RC file in 2022.
 
 [Read More](/blog/whats-in-my-rc-2022)
 
@@ -66,7 +66,7 @@ A tour of my RC file in 2021.
 
 November 20th, 2020
 
-Blog post about building a portfolio website with Nextjs.
+Building a portfolio website with Nextjs.
 
 [Read More](/blog/building-my-portfolio-website-with-nextjs)
 

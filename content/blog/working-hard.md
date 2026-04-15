@@ -1,6 +1,6 @@
 ---
 title: Working Hard
-description: Blog post about working hard.
+description: Some concepts around my work ethic that I've learned over the years.
 ---
 
 # Working Hard

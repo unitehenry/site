@@ -1,6 +1,6 @@
 ---
 title: Building My Portfolio Website With Nextjs
-description: Blog post about building a portfolio website with Nextjs.
+description: Building a portfolio website with Nextjs.
 ---
 
 # Building My Portfolio Website With Nextjs
