@@ -10,6 +10,8 @@ YC Backend Fintech Startup
 
 Contributed to a five-person engineering team that was able to 13x revenue in a year and bring a YC-backed fintech company to a $27M Series B.
 
+[https://www.forbes.com/sites/jeffkauflin/2026/04/14/how-a-credit-card-fintech-resurrected-itself-by-targeting-the-superrich](https://www.forbes.com/sites/jeffkauflin/2026/04/14/how-a-credit-card-fintech-resurrected-itself-by-targeting-the-superrich)
+
 [https://www.prnewswire.com/news-releases/atlas-card-raises-fresh-capital-and-announces-major-company-milestones-302328649.html](https://www.prnewswire.com/news-releases/atlas-card-raises-fresh-capital-and-announces-major-company-milestones-302328649.html)
 
 **Senior Software Engineer**
