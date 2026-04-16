@@ -78,6 +78,14 @@ A lightweight express server to handle Twilio voice and messaging webhooks for p
 
 ## Blog
 
+### OSSU
+
+May 1st, 2026
+
+After six years of self-paced study alongside full-time software engineering work, I’ve finished the core of the Open Source Society University (OSSU) Computer Science curriculum.
+
+[Read More](/blog/ossu)
+
 ### Hyprland on dGPU Laptop
 
 November 14th, 2025
@@ -85,14 +93,6 @@ November 14th, 2025
 This guide details a clever Arch Linux + Hyprland setup on a dual-boot NVIDIA dGPU laptop, allowing the user to boot directly into Hyprland on an external monitor while keeping the laptop lid closed — no keyboard interaction required.
 
 [Read More](/blog/hyprland-for-dgpu-laptop)
-
-### Domain-Driven Test Pipelines 
-
-September 13th, 2025
-
-An effective strategy for optimizing CI pipelines in large, domain-driven projects by leveraging GitHub Actions matrix workflows to run tests per domain (e.g., user, order, shipping) in parallel.
-
-[Read More](/blog/domain-driven-test-pipelines)
 
 ### [More Blog Posts](/blog)
 
