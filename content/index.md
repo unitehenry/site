@@ -96,20 +96,6 @@ An effective strategy for optimizing CI pipelines in large, domain-driven projec
 
 ### [More Blog Posts](/blog)
 
-## Education
-
-### Open Source Society University
-
-2021 - 2026 | Path to a free self-taught education in Computer Science!
-
-[https://github.com/ossu/computer-science](https://github.com/ossu/computer-science)
-
-### Rowan College of South Jersey
-
-2016 - 2020 | Associate of Science
-
-[https://rcsj.edu](https://rcsj.edu)
-
 ## Awards & Certifications
 
 [Machine Learning](https://www.coursera.org/account/accomplishments/specialization/certificate/71VDWZPFM6HF) (November 2025)
