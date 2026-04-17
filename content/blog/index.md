@@ -10,7 +10,7 @@ title: Blog
 
 May 1st, 2026
 
-After six years of self-paced study alongside full-time software engineering work, I’ve finished the core of the Open Source Society University (OSSU) Computer Science curriculum.
+After five years of self-paced study alongside full-time software engineering work, I’ve finished the core of the Open Source Society University (OSSU) Computer Science curriculum.
 
 [Read More](/blog/ossu)
 
