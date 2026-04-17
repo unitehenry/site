@@ -1,6 +1,6 @@
 ---
 title: OSSU
-description: After six years of self-paced study alongside full-time software engineering work, I’ve finished the core of the Open Source Society University (OSSU) Computer Science curriculum.
+description: After five years of self-paced study alongside full-time software engineering work, I’ve finished the core of the Open Source Society University (OSSU) Computer Science curriculum.
 ---
 
 # OSSU
@@ -19,7 +19,7 @@ One of the reasons I decided to pursue this curriculum was because I didn't fini
 
 ## My Journey
 
-It took me six years years to complete all the courses, but realistically I could've done it in two years like the curriculum suggests. But I had taken many breaks between courses. I would only take one course at a time, and do most of my studies on the weekend.
+It took me five years to complete all the courses, but realistically I could've done it in two years like the curriculum suggests. But I had taken many breaks between courses. I would only take one course at a time, and do most of my studies on the weekend.
 
 ### Timeline
 
@@ -58,7 +58,7 @@ Here is a timeline of the 30 courses I took:
 
 ### Notable Events
 
-Some notable events that occurred during my six year journey with OSSU:
+Some notable events that occurred during my five year journey with OSSU:
 
 - 2021: Started OSSU at the tail-end of the pandemic.
 - 2022: Moved from Philadelphia to Miami to work at a startup.
