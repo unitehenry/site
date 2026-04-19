@@ -19,7 +19,7 @@ produce more than you consume
 YC Backend Fintech Startup
 
 **Senior Software Engineer**
-September 2025 - Present (8 months)
+September 2025 - Present (9 months)
 
 **Software Engineer**
 October 2023 - September 2025 (2 years)
