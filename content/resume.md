@@ -69,15 +69,15 @@ May 2019 - November 2020 (1 year 7 months)
 
 ## Projects
 
-### C Raylib Flappy Bird
+### Raylib Flappy Bird
 
 April 2026
 
 A Flappy Bird clone written in C and compiled to WebAssembly.
 
-[https://github.com/unitehenry/rayflap](https://github.com/unitehenry/site) ([demo](https://unitehenry.github.io/rayflap/game.html))
+[https://github.com/unitehenry/rayflap](https://github.com/unitehenry/rayflap) ([demo](https://unitehenry.github.io/rayflap/game.html))
 
-**Skills:** C, WebAssembly
+**Skills:** C, Raylib, WebAssembly
 
 ### Static Site Generator
 
