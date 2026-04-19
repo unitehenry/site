@@ -42,6 +42,14 @@ September 2021 - October 2023 (1 year 7 months)
 
 ## Projects
 
+### C Raylib Flappy Bird
+
+April 2026
+
+A Flappy Bird clone written in C and compiled to WebAssembly.
+
+[https://github.com/unitehenry/rayflap](https://github.com/unitehenry/site) ([demo](https://unitehenry.github.io/rayflap/game.html))
+
 ### Static Site Generator
 
 April 2026
@@ -65,14 +73,6 @@ February 2026
 A lightweight express server to handle Twilio voice and messaging webhooks for prompting Opencode.
 
 [https://github.com/unitehenry/twilio-opencode](https://github.com/unitehenry/twilio-opencode)
-
-### Satosa
-
-July 2023
-
-Launched an MVP that made it to the front page of Product Hunt, by offering a service that manages agreements on your websites and apps with a low-friction click to accept e-signature alternative.
-
-[https://www.producthunt.com/products/satosa](https://www.producthunt.com/products/satosa) ([demo](https://youtu.be/IpOJEfsZC9Q))
 
 ### [More Projects](/projects)
 
