@@ -4,7 +4,7 @@ title: Projects
 
 # Projects
 
-### Raylib Flappy Bird
+## Raylib Flappy Bird
 
 April 2026
 
