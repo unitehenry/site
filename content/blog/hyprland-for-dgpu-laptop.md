@@ -108,4 +108,5 @@ By using this bash script, I can do the following to boot into Windows:
 
 ## Demo
 
-*todo: film a video of the boot sequence :)*
+<!-- cspell:disable-next-line -->
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">dual booting arch linux and windows <a href="https://t.co/Sqjl6MyihI">pic.twitter.com/Sqjl6MyihI</a></p>&mdash; Henry Unite (@UniteHenry) <a href="https://twitter.com/UniteHenry/status/2048181022941233175?ref_src=twsrc%5Etfw">April 25, 2026</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
