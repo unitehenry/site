@@ -69,6 +69,16 @@ May 2019 - November 2020 (1 year 7 months)
 
 ## Projects
 
+### RSS Feed Aggregator
+
+May 2026
+
+RSS feed aggregator with a vibecoded reader app.
+
+[https://github.com/unitehenry/viberss](https://github.com/unitehenry/viberss) ([demo](https://unitehenry.github.io/viberss))
+
+**Skills:** Typescript, React, Shadcn, Shell Scripting, Web Scraping
+
 ### Raylib Flappy Bird
 
 April 2026

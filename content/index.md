@@ -42,6 +42,14 @@ September 2021 - October 2023 (1 year 7 months)
 
 ## Projects
 
+### RSS Feed Aggregator
+
+May 2026
+
+RSS feed aggregator with a vibecoded reader app.
+
+[https://github.com/unitehenry/viberss](https://github.com/unitehenry/viberss) ([demo](https://unitehenry.github.io/viberss))
+
 ### Raylib Flappy Bird
 
 April 2026
@@ -65,14 +73,6 @@ March 2026
 A serverless compute port of the OmniParser vision model for the Modal platform.
 
 [https://github.com/unitehenry/modal-omniparser](https://github.com/unitehenry/modal-omniparser)
-
-### Twilio Opencode
-
-February 2026
-
-A lightweight express server to handle Twilio voice and messaging webhooks for prompting Opencode.
-
-[https://github.com/unitehenry/twilio-opencode](https://github.com/unitehenry/twilio-opencode)
 
 ### [More Projects](/projects)
 

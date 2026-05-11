@@ -4,6 +4,14 @@ title: Projects
 
 # Projects
 
+## RSS Feed Aggregator
+
+May 2026
+
+RSS feed aggregator with a vibecoded reader app.
+
+[https://github.com/unitehenry/viberss](https://github.com/unitehenry/viberss) ([demo](https://unitehenry.github.io/viberss))
+
 ## Raylib Flappy Bird
 
 April 2026
