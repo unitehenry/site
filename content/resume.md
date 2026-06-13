@@ -69,6 +69,16 @@ May 2019 - November 2020 (1 year 7 months)
 
 ## Projects
 
+### Modal Nacrith-GPU
+
+June 2026
+
+Nacrith-GPU compression system running on Modal serverless.
+
+[https://github.com/unitehenry/modal-nacrith-gpu](https://github.com/unitehenry/modal-nacrith-gpu)
+
+**Skills:** Python
+
 ### RSS Feed Aggregator
 
 May 2026
