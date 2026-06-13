@@ -28,7 +28,7 @@ Khosla Ventures and Founders Fund Backed Insurtech Startup
 March 2023 - October 2023 (8 months)
 
 **Full Stack Developer**
-September 2021 - October 2023 (1 year 7 months)
+September 2021 - March 2023 (1 year 7 months)
 
 [https://techcrunch.com/2023/08/03/meet-lula-a-startup-that-aims-to-be-the-stripe-for-insurance-and-just-raised-35-5m](https://techcrunch.com/2023/08/03/meet-lula-a-startup-that-aims-to-be-the-stripe-for-insurance-and-just-raised-35-5m)
 

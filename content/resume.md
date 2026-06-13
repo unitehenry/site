@@ -39,7 +39,7 @@ initial product on Firebase which enabled rapid growth and contributing to a $35
 March 2023 - October 2023 (8 months)
 
 **Full Stack Developer**
-September 2021 - October 2023 (1 year 7 months)
+September 2021 - March 2023 (1 year 7 months)
 
 **Skills:** Firebase, React, Node JS, C#, .NET Framework, GCP
 
