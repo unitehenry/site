@@ -9,7 +9,7 @@ title: Experience
 YC Backend Fintech Startup
 
 **Senior Software Engineer**
-September 2025 - Present (8 months)
+September 2025 - July 2026 (10 months)
 
 **Software Engineer**
 October 2023 - September 2025 (2 years)

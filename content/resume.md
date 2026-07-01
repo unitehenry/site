@@ -15,7 +15,7 @@ Contributed to a five-person engineering team that was able to 13x revenue in a 
 [https://www.prnewswire.com/news-releases/atlas-card-raises-fresh-capital-and-announces-major-company-milestones-302328649.html](https://www.prnewswire.com/news-releases/atlas-card-raises-fresh-capital-and-announces-major-company-milestones-302328649.html)
 
 **Senior Software Engineer**
-September 2025 - Present (8 months)
+September 2025 - July 2026 (10 months)
 
 **Software Engineer**
 October 2023 - September 2025 (2 years)
