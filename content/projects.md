@@ -4,6 +4,14 @@ title: Projects
 
 # Projects
 
+## Hyprland Agent Desktop
+
+July 2026
+
+Isolated hyprland desktop for agents.
+
+[https://github.com/unitehenry/hyagency](https://github.com/unitehenry/hyagency)
+
 ## Modal Nacrith-GPU
 
 June 2026
