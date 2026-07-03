@@ -22,6 +22,7 @@ I would prefer dying rich. But if I die poor, I just want to make sure I die doi
 > The best investment by far is anything that develops yourself, and it’s not taxed at all…Whatever abilities you have can’t be taken away from you. They can’t actually be inflated away from you. -- Warren Buffet
 
 Here is a breakdown of my portfolio:
+
 - My current skills and the skills I'm developing
 - Money saved to build something valuable to people
 - [Social capital](#social-capital)
