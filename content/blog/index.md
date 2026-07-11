@@ -6,6 +6,14 @@ title: Blog
 
 [RSS](/blog/rss.xml)
 
+## Practical Advice For Finding A Job
+
+July 11th, 2026
+
+A guide that covers identifying important problems and companies worth working for, smart sourcing and outreach strategies, demonstrating your value through public work, playing the long game with persistence, LeetCode tips, and staying authentic throughout the process.
+
+[Read More](/blog/practical-advice-for-finding-a-job)
+
 ## OSSU
 
 May 1st, 2026
