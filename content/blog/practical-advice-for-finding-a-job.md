@@ -13,7 +13,7 @@ description: A guide that covers identifying important problems and companies wo
 
 ## Where To Work
 
-The first step to finding a job is deciding what are some imporant problems in the world that you can help solve. This will help you research what companies are active in those in areas, and help filter opportunities that you'd be intersted in pursuing. For example, my preferences include industrials (Manufacturing, Energy, Mining, Semiconductors, Robotics) and compute infrastructure (Cloud, Observability, Inference).
+The first step to finding a job is deciding what are some important problems in the world that you can help solve. This will help you research what companies are active in those in areas, and help filter opportunities that you'd be interested in pursuing. For example, my preferences include industrials (Manufacturing, Energy, Mining, Semiconductors, Robotics) and compute infrastructure (Cloud, Observability, Inference).
 
 ### Sourcing Companies
 
@@ -37,7 +37,7 @@ But these forums come and go, what's important is that you're identifying the co
 cat resume.pdf > /dev/null
 ```
 
-Whenever you submit an application, you need to assume it is piped to `/dev/null`. You should still submit it, but you need to suplement your submission by leveraging as many channels as possible. Here are some ways to do that:
+Whenever you submit an application, you need to assume it is piped to `/dev/null`. You should still submit it, but you need to supplement your submission by leveraging as many channels as possible. Here are some ways to do that:
 
 - Find the company on LinkedIn and click the "People" tab
 - Find the email of someone who works there
@@ -59,7 +59,7 @@ It can be helpful to just get out of the house. Just find an event, find someone
 
 This shouldn't be the most important focus, but overall good to do occasionally. Depending on the event, there will be people just scavenging to find a job. Expect to get nothing out of these events. Just chill, have a drink, and talk about what you're working on.
 
-One of my previous roles were found by literaly flying out to a hackathon and working on a project that demonstrated I could be useful to a company.
+One of my previous roles were found by literally flying out to a hackathon and working on a project that demonstrated I could be useful to a company.
 
 ## Be Useful
 
@@ -104,4 +104,4 @@ Here are some more practical advice regarding leet code:
 
 ## Be Authentic
 
-The last piece of advice, which may be bad advice but has gotten me this far, is to be authentic. Talk about things you've actually built (sending links helps here), talk about your actual past experiences, and ask genunine questions about the company you want to work for. Worry less about what the company has to offer, and focus more on how can you add the most value possible in a short amount of time.
+The last piece of advice, which may be bad advice but has gotten me this far, is to be authentic. Talk about things you've actually built (sending links helps here), talk about your actual past experiences, and ask genuine questions about the company you want to work for. Worry less about what the company has to offer, and focus more on how can you add the most value possible in a short amount of time.
