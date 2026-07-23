@@ -8,7 +8,7 @@ title: Awards & Certifications
 
 [Neural Networks and Deep Learning](https://www.coursera.org/account/accomplishments/certificate/0Q1I45P0H3T6) -- July 2026
 
-[ Algorithms: Design and Analysis, Part 2](https://courses.edx.org/certificates/65032a3ed28f4c789c68472915dc2d5d) -- March 2026
+[Algorithms: Design and Analysis, Part 2](https://courses.edx.org/certificates/65032a3ed28f4c789c68472915dc2d5d) -- March 2026
 
 [Algorithms: Design and Analysis, Part 1](https://courses.edx.org/certificates/bf385d01b795491a80be6c99c57d7c4e) -- March 2026
 
