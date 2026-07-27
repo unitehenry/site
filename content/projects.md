@@ -4,6 +4,30 @@ title: Projects
 
 # Projects
 
+## One-Click Agent Browser Deploy
+
+July 2026
+
+Give your agent a persistent browser that you can access too with one-click DigitalOcean deployments.
+
+[https://github.com/unitehenry/amish](https://github.com/unitehenry/amish) ([demo](https://x.com/unitehenry/status/2081641349376512380))
+
+## Agent Browser FastMCP
+
+July 2026
+
+Proxy agent-browser MCP stdio over HTTP/SSE using FastMCP.
+
+[https://github.com/unitehenry/agent-browser-mcp](https://github.com/unitehenry/agent-browser-mcp)
+
+## X11 Chromium Docker
+
+July 2026
+
+A minimal container build of X11 with VNC support.
+
+[https://github.com/unitehenry/xpod](https://github.com/unitehenry/xpod)
+
 ## Hyprland Agent Desktop
 
 July 2026
