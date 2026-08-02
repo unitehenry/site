@@ -4,6 +4,8 @@ title: Awards & Certifications
 
 # Awards & Certifications
 
+[Structuring Machine Learning Projects](https://www.coursera.org/account/accomplishments/certificate/0K12PHW15UWX) -- August 2026
+
 [Improving Deep Neural Networks: Hyperparameter Tuning, Regularization and Optimization](https://www.coursera.org/account/accomplishments/certificate/NL7AUYUWRO9P) -- July 2026
 
 [Neural Networks and Deep Learning](https://www.coursera.org/account/accomplishments/certificate/0Q1I45P0H3T6) -- July 2026
