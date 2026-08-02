@@ -90,7 +90,7 @@ What's important is that you keep sharpening your toolkit:
 
 ## Leet Code
 
-I've noticed leet code has become less popular lately, but don't take it for granted. I still think there's value in using DSA problems as technical interview practice. They're good for brushing up on DSA fundamentals and flexing your technical interview muscle (explaining though process, analyzing complexity, considering constraints, etc).
+I've noticed leet code has become less popular lately, but don't take it for granted. I still think there's value in using DSA problems as technical interview practice. They're good for brushing up on DSA fundamentals and flexing your technical interview muscle (explaining thought process, analyzing complexity, considering constraints, etc).
 
 Here are some more practical advice regarding leet code:
 
