@@ -205,6 +205,8 @@ Maintained and contributed to an open source WYSIWYG editor as an internship pro
 
 ## Awards & Certifications
 
+[Deep Learning](https://www.coursera.org/account/accomplishments/specialization/certificate/TTNEVT8W9NNQ) (August 2026)
+
 [Machine Learning](https://www.coursera.org/account/accomplishments/specialization/certificate/71VDWZPFM6HF) (November 2025)
 
 [Build a Modern Computer from First Principles: Nand to Tetris Part II](https://www.coursera.org/account/accomplishments/certificate/EG4ZXUGG4DHY) (May 2024)

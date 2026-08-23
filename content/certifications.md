@@ -4,6 +4,8 @@ title: Awards & Certifications
 
 # Awards & Certifications
 
+[Deep Leaning](https://www.coursera.org/account/accomplishments/specialization/certificate/TTNEVT8W9NNQ) -- August 2026
+
 [Sequence Models](https://www.coursera.org/account/accomplishments/certificate/ZTBFW6054RJY) -- August 2026
 
 [Convolutional Neural Networks](https://www.coursera.org/account/accomplishments/certificate/AYPI9IF5V1LQ) -- August 2026
