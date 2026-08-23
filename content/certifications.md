@@ -4,6 +4,8 @@ title: Awards & Certifications
 
 # Awards & Certifications
 
+[Sequence Models](https://www.coursera.org/account/accomplishments/certificate/ZTBFW6054RJY) -- August 2026
+
 [Convolutional Neural Networks](https://www.coursera.org/account/accomplishments/certificate/AYPI9IF5V1LQ) -- August 2026
 
 [Structuring Machine Learning Projects](https://www.coursera.org/account/accomplishments/certificate/0K12PHW15UWX) -- August 2026
