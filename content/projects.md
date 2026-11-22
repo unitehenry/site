@@ -4,6 +4,14 @@ title: Projects
 
 # Projects
 
+## OpenPod
+
+October 2026
+
+An opencode plugin that spins up a dedicated virtual machine for each session to isolate agent work.
+
+[https://github.com/unitehenry/openpod](https://github.com/unitehenry/openpod) ([demo](https://x.com/unitehenry/status/2124602578868613221))
+
 ## One-Click Agent Browser Deploy
 
 July 2026

@@ -69,6 +69,16 @@ May 2019 - November 2020 (1 year 7 months)
 
 ## Projects
 
+### OpenPod
+
+October 2026
+
+A plugin that spins up a dedicated virtual machine for each opencode session to isolate agent work.
+
+[https://github.com/unitehenry/openpod](https://github.com/unitehenry/openpod) ([demo](https://x.com/unitehenry/status/2124602578868613221))
+
+**Skills:** Typescript, Virtual Machines, Hypervisor, Linux, Agents
+
 ### One-Click Agent Browser Deploy
 
 July 2026
